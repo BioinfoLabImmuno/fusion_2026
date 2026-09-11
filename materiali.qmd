@@ -2,25 +2,19 @@
 title: "Materiali scaricabili"
 ---
 
-# Download
+# Download principali
 
-## Pacchetto completo
-
-[⬇ Scarica ZIP con i tre HTML originali](downloads/materiali-originali-fusion-2026.zip)
+- [ZIP con i tre HTML originali](downloads/materiali-originali-fusion-2026.zip)
+- [PDF Tamborero et al. 2022 — MTBP](downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf)
 
 # File originali
 
-| File | Link |
+| Materiale | Link |
 |---|---|
 | Index / Molecular Tumor Board Handbook | [index_originale.html](originali/index_originale.html) |
 | Framework AMP/ASCO/CAP + ESCAT | [02_framework_originale.html](originali/02_framework_originale.html) |
 | SplitFusion | [08_SplitFusion_originale.html](originali/08_SplitFusion_originale.html) |
 
 ::: {.callout-note}
-Questa pagina contiene solo i tre materiali forniti per il repository Fusion 2026.
+Questa pagina serve come area download del repository Fusion 2026.
 :::
-
-
-## Articolo MTBP
-
-[⬇ Tamborero et al., Nature Cancer 2022](downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf)

@@ -1,26 +1,24 @@
-# Fusion 2026 — repository corretto completo
+# Fusion 2026 — slide iniziali migliorate
 
-Questo pacchetto corregge la versione precedente includendo più materiale del file SplitFusion e una pagina di controllo contenuti.
+Questa versione migliora la prima parte della presentazione e rende più chiaro il percorso:
+dato molecolare → evidenza analitica → interpretazione → actionability → report.
 
-## Render
+## Aggiornamento
+
+Copia questi file nel repository `fusion_2026`, poi:
 
 ```bash
 rm -rf docs
 quarto render
 xdg-open docs/index.html
-```
-
-## Verifiche
-
-```bash
-grep -i "reveal" docs/index.html | head
-find docs/originali docs/downloads -maxdepth 2 -type f | sort
-```
-
-## Push
-
-```bash
 git add .
-git commit -m "Complete Fusion 2026 material"
+git commit -m "Improve Fusion 2026 opening slides and style"
 git push origin main
 ```
+
+## GitHub Pages
+
+Deve restare impostato su:
+
+- branch `gh-pages`
+- folder `/ (root)`

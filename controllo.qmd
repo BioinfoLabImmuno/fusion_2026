@@ -2,60 +2,50 @@
 title: "Controllo contenuti"
 ---
 
-# Cosa è incluso nella presentazione
+# Incluso nella presentazione
 
-## Dal file index
+## Da index originale
 
 - scopo del Molecular Tumor Board Simulation Handbook
-- focus su workflow, interpretazione e comunicazione
 - target e prerequisiti
-- struttura didattica dei capitoli
-- aree del corso originale
+- struttura didattica
+- focus su workflow, interpretazione e comunicazione
 
-## Dal file framework
+## Da framework
 
 - qualità e contesto del dato
-- copertura, purezza, istologia, metodo
 - tumor-only vs matched
 - tiering AMP/ASCO/CAP
 - ESCAT
-- trade-off
-- documentazione
+- trade-off e documentazione
 - aleatoric vs epistemic uncertainty
 
-## Dal file SplitFusion
+## Da SplitFusion
 
 - importanza clinica delle fusioni
-- esempi BCR-ABL ed EML4-ALK
-- criticità diagnostiche
-- AMP
-- split reads e BWA-MEM
-- RNA-seq e AMP data
-- workflow SplitFusion completo
-- deduplication
+- difficoltà diagnostiche
+- RNA-seq e Anchored Multiplex PCR
+- BWA-MEM chimeric split reads
 - CIGAR transformation
-- breakpoint calling/filtering
+- candidate breakpoint calling
+- filtering
 - gene annotation
 - frame-ness
-- exon-boundary
-- unique DNA/RNA fragment ligation sites
-- SplitFusion-Target
-- dependencies
+- exon-boundary analysis
+- unique fragment support
 - snpEff / ANNOVAR
-- comandi di setup
+- dependencies e setup
 
+## Dal paper MTBP
 
-## Dal paper MTBP (Tamborero et al. 2022)
-
-- CDSS e workflow Cancer Core Europe
-- functional vs biological vs clinical interpretation
+- CDSS e supporto al Molecular Tumor Board
+- functional / biological / clinical interpretation
 - allele-centric interpretation
-- gerarchia di evidenza A/B/C
+- evidence A/B/C
 - unknown functional relevance
 - biomarker matching
 - ESCAT
-- tumor-only e limiti della VAF
+- tumor-only caveat
 - genetic counseling alerts
-- report HTML interattivo
-- automazione e ruolo del Molecular Tumor Board
-- esercitazione ovarica AI × MTB
+- report interattivi
+- esercitazione HGSOC + AI audit

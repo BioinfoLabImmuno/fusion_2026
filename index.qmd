@@ -1,6 +1,6 @@
 ---
 title: "Fusion 2026"
-subtitle: "Molecular Tumor Board · Framework decisionale · SplitFusion"
+subtitle: "Molecular Tumor Board · Framework decisionale · SplitFusion · MTBP"
 author: "Masterclass per biologi clinici e bioinformatici"
 format:
   revealjs:
@@ -16,106 +16,137 @@ format:
     css: styles.css
 ---
 
-## Fusion 2026
+## Fusion 2026 {.inverse .center}
 
-# Molecular Tumor Board
+# Dal dato molecolare alla decisione MTB
 
-### Framework decisionale + SplitFusion
+### Framework decisionale · SplitFusion · MTBP
 
 ::: {.small}
-Nuovo repository costruito solo dai tre file forniti: index, framework e SplitFusion.
+Mini-masterclass Quarto RevealJS per biologi clinici e bioinformatici.
 :::
 
 ---
 
-## Perché questo corso
+## Perché questa masterclass
 
-Il materiale originale descrive un handbook interattivo per esercitarsi con:
+### Problema
 
-- workflow MTB
-- interpretazione dei risultati
-- comunicazione dei risultati
-- uso di tabelle di varianti
-- ragionamento secondo AMP/ASCO/CAP ed ESCAT
+Una chiamata molecolare non è ancora una raccomandazione clinica.
 
----
+### Obiettivo
 
-## Target e prerequisiti
+Costruire un percorso verificabile:
 
-### Target
+```text
+dato grezzo → evidenza analitica → interpretazione → actionability → report
+```
 
-- specializzandi
-- biologi molecolari
-- bioinformatici
-- clinici interessati ai Molecular Tumor Board
-
-### Prerequisiti minimi
-
-- NGS di base
-- varianti somatiche
-- RNA-seq
-
----
-
-## Struttura didattica originale
-
-Ogni capitolo segue:
-
-# Obiettivi → Dati/Metodi → Analisi → Output/Report → Riferimenti
-
-Con:
-
-- suggerimenti pratici
-- pitfall comuni
-- checklist operative
-
----
-
-## Aree del corso originale
-
-Il corso originale includeva esempi su:
-
-- **Glioma / GBM IDH-wildtype**
-- **Ovaio / HGSOC**
-- **Mammella HR+/HER2−**
-- **TNBC con BRCA1**
-- **fusioni geniche da RNA-seq**
-
-::: {.small}
-In questo nuovo repository teniamo solo i materiali forniti: introduzione, framework e SplitFusion.
+::: {.takehome}
+Il Molecular Tumor Board deve separare evidenza, inferenza e decisione.
 :::
 
 ---
 
-# MODULO 1
+## Cosa imparerai
 
-## Framework di decisione
+Al termine del percorso saprai distinguere:
+
+- qualità del dato
+- interpretazione funzionale
+- contesto tumorale
+- tiering AMP/ASCO/CAP
+- actionability ESCAT
+- evidenza di fusione
+- supporto decisionale MTBP
+- limiti dell'AI nella sintesi clinica
 
 ---
 
-## Dal risultato NGS alla decisione clinica
+## Mappa del corso
 
-Il framework pragmatico separa:
+```text
+NGS / RNA-seq data
+      ↓
+qualità del dato
+      ↓
+variant / fusion interpretation
+      ↓
+functional relevance
+      ↓
+tumor context
+      ↓
+AMP/ASCO/CAP + ESCAT
+      ↓
+MTB recommendation
+      ↓
+report strutturato
+```
 
-1. qualità e contesto del dato
-2. tiering AMP/ASCO/CAP
-3. actionability clinica ESCAT
-4. trade-off
-5. documentazione
+---
+
+## Come seguire le slide
+
+Ogni modulo usa la stessa logica:
+
+| Fase | Domanda |
+|---|---|
+| Concetto | Cosa sto valutando? |
+| Pitfall | Quale errore devo evitare? |
+| Checklist | Quali controlli faccio? |
+| Domanda MTB | Cosa porto alla discussione? |
+| Take-home | Cosa deve restare nel report? |
+
+---
+
+## Materiali e controllo
+
+- [Materiali scaricabili](materiali.html)
+- [Controllo contenuti](controllo.html)
+
+::: {.small}
+I file originali restano disponibili come materiale didattico e di verifica.
+:::
+
+
+---
+
+
+
+# MODULO 1 {.inverse .center}
+
+## Framework decisionale MTB
+
+---
+
+## Dal risultato NGS alla decisione
+
+Il framework separa cinque passaggi:
+
+| Livello | Domanda |
+|---|---|
+| Qualità | Il dato è interpretabile? |
+| Tiering | Come classifico l'alterazione? |
+| Actionability | È clinicamente rilevante nel setting? |
+| Trade-off | Cosa cambia per il paziente? |
+| Documentazione | Il ragionamento è tracciabile? |
 
 ---
 
 ## Qualità e contesto del dato
 
-Prima di discutere il significato clinico:
+Prima del significato clinico:
 
 - copertura
-- purezza
+- purezza tumorale
 - coerenza istologica
-- metodo utilizzato
+- metodo usato
 - tumor-only vs matched
+- limiti tecnici del test
 
-# Il dato viene prima dell'interpretazione
+::: {.takehome}
+Il dato viene prima dell'interpretazione.
+:::
 
 ---
 
@@ -123,98 +154,94 @@ Prima di discutere il significato clinico:
 
 ### Tumor-only
 
-Richiede particolare attenzione a:
+Richiede cautela su:
 
 - origine germinale/somatica
-- contaminazione normale
-- copy number
 - VAF
+- copy number
+- contaminazione normale
 - incertezza residua
 
 ### Matched tumor-normal
 
-Aiuta a separare varianti somatiche e germinali.
+Aiuta a distinguere varianti somatiche e germinali.
 
 ---
 
-## Tiering AMP/ASCO/CAP
+## AMP/ASCO/CAP
 
-Il materiale usa il tiering per:
+Il tiering organizza il significato clinico-molecolare di:
 
-- varianti
+- SNV / indel
 - amplificazioni
 - fusioni
-
-Classificazione:
+- alterazioni strutturali
 
 # Tier I–IV
 
-### Punto chiave
-
-Il tiering descrive il significato della variante nel contesto clinico-molecolare.
+::: {.small}
+Il tiering non è automaticamente una decisione terapeutica.
+:::
 
 ---
 
 ## ESCAT
 
-L'actionability clinica viene letta con livelli ESCAT.
+ESCAT risponde a una domanda diversa:
 
-### Domanda centrale
+# Quanto è forte l'evidenza clinica?
 
-Quanto è forte l'evidenza che collega:
+Collega:
 
-# alterazione → tumore → setting → trattamento?
+```text
+alterazione
+   ↓
+tipo tumorale
+   ↓
+setting clinico
+   ↓
+trattamento
+   ↓
+livello di evidenza
+```
 
 ---
 
-## Tiering ≠ actionability
+## Pitfall
+
+# Pathogenicity ≠ actionability
 
 Una variante può essere:
 
-- biologicamente rilevante
-- tecnicamente vera
-- classificabile
-- ma non immediatamente actionable in quel setting
+- vera analiticamente
+- patogenetica biologicamente
+- ma non actionable in quello specifico setting
 
-# Non saltare i passaggi
+::: {.warn}
+Errore da evitare: variante → farmaco.
+:::
 
 ---
 
-## Trade-off clinico
+## Trade-off e documentazione
 
-Il framework include:
+Una raccomandazione MTB deve includere:
 
 - beneficio atteso
 - tossicità
 - logistica
 - preferenze del paziente
-
-### Messaggio
-
-La decisione MTB non è una semplice conversione automatica da variante a terapia.
-
----
-
-## Documentazione
-
-Nel processo MTB vanno documentati:
-
-- raccomandazione primaria
 - alternative
 - trial clinici
 - follow-up
 
-### Obiettivo
-
-Rendere tracciabile il ragionamento.
-
 ---
 
-## Aleatoric vs epistemic uncertainty
+## Incertezza
 
 ### Aleatoric
 
-Incertezza intrinseca al dato o al fenomeno osservato.
+Incertezza intrinseca al dato.
 
 ### Epistemic
 
@@ -223,285 +250,184 @@ Incertezza dovuta a:
 - limiti del modello
 - limiti del dato
 - incompletezza conoscitiva
-- esempio: tumor-only
+- tumor-only
+
+::: {.takehome}
+Un buon report dichiara cosa è certo, probabile o ignoto.
+:::
 
 ---
 
 ## Checklist MTB
 
-Prima di formulare una raccomandazione:
+Prima di discutere actionability:
 
-1. il dato è tecnicamente interpretabile?
-2. il contesto istologico è coerente?
-3. il tier AMP/ASCO/CAP è definito?
-4. il livello ESCAT è pertinente?
-5. trade-off e alternative sono dichiarati?
-6. l'incertezza è documentata?
+1. Il dato è tecnicamente interpretabile?
+2. Il contesto istologico è coerente?
+3. Il tier AMP/ASCO/CAP è corretto?
+4. ESCAT è pertinente?
+5. L'incertezza è esplicita?
+6. Il report è tracciabile?
 
 ---
 
-# MODULO 2
+# MODULO 2 {.inverse .center}
 
 ## SplitFusion
 
 ---
 
-## Perché parlare di fusioni
+## Perché le fusioni contano
 
-Le fusioni geniche sono rilevanti in oncologia.
+Le fusioni geniche sono importanti in oncologia di precisione.
 
-Esempi citati nel materiale:
+Esempi classici:
 
-- **BCR-ABL** nella leucemia mieloide cronica
-- **EML4-ALK** nel carcinoma polmonare
+- **BCR-ABL**
+- **EML4-ALK**
 
-### Obiettivo clinico
-
-Abbinare il paziente al trattamento corretto quando l'evidenza è solida.
+::: {.takehome}
+Una fusione può essere un driver, un biomarker o un artefatto: va dimostrato.
+:::
 
 ---
 
-## Difficoltà diagnostiche delle fusioni
+## Perché sono difficili
 
-Il materiale evidenzia:
+Criticità tipiche:
 
-- partner di fusione numerosi
 - partner sconosciuti
-- bassa espressione, per esempio ALK
-- espressione proteica non specifica, per esempio ROS1
+- bassa espressione
 - splice site criptici
-- bassa diversità di sequenza ai breakpoint
-- difficoltà di mapping
-- campioni poveri, limitati o a bassa cellularità tumorale
+- mapping difficile al breakpoint
+- bassa diversità di sequenza
+- campioni poveri o a bassa cellularità
+- espressione proteica non specifica
 
 ---
 
-## Ruolo dell'AMP
+## RNA-seq e AMP
 
-L'Anchored Multiplex PCR viene presentata come tecnologia utile per affrontare molte criticità della diagnostica delle fusioni.
+SplitFusion può essere applicato a:
 
-### Nel contesto SplitFusion
+### RNA-seq
 
-SplitFusion può essere usato per:
+per rilevare trascritti di fusione.
 
-- RNA-seq
-- Anchored Multiplex PCR data
+### Anchored Multiplex PCR
+
+per arricchire regioni target e catturare partner noti o inattesi.
 
 ---
 
-## SplitFusion — principio computazionale
+## Principio computazionale
 
 SplitFusion sfrutta:
 
 # chimeric split-read alignments di BWA-MEM
 
-Caratteristiche riportate:
-
-- agnostico rispetto ai soli trascritti codificanti noti
-- computazionalmente efficiente
-- orientato al reporting clinico
-
----
-
-## Perché gli split reads sono importanti
-
-Uno split read può attraversare un breakpoint.
-
-In una fusione, l'evidenza analitica deve interrogare:
-
-- posizione del breakpoint
-- qualità dell'allineamento
-- coerenza delle letture
-- possibili mapping artefactuali
-- supporto indipendente
+Un candidato di fusione nasce quando le letture supportano un evento chimerico coerente.
 
 ---
 
 ## Workflow SplitFusion
 
-Il workflow descritto comprende:
-
-1. reference alignment
-2. deduplication
-3. CIGAR transformation
-4. candidate breakpoint calling
-5. initial breakpoint filtering
-6. breakpoint gene annotation
-7. frame-ness
-8. exon-boundary analysis
-9. further filtering
-10. target reporting
-11. visualization
+```text
+reference alignment
+      ↓
+deduplication
+      ↓
+CIGAR transformation
+      ↓
+candidate breakpoint calling
+      ↓
+initial filtering
+      ↓
+gene annotation
+      ↓
+frame-ness + exon-boundary
+      ↓
+reporting / visualization
+```
 
 ---
 
-## Reference alignment e deduplication
+## Audit dello split-read
 
-### Obiettivo
+Controllare:
 
-Produrre allineamenti utilizzabili per cercare evidenza chimerica.
-
-### Audit
-
-- la reference è corretta?
-- i reads sono deduplicati?
-- l'allineamento supporta il breakpoint?
-- la qualità di mapping è sufficiente?
+- posizione del breakpoint
+- qualità di mapping
+- coerenza della porzione split
+- supporto da frammenti indipendenti
+- ambiguità di mapping
+- duplicati
+- contesto esonico
 
 ---
 
 ## CIGAR transformation
 
-La trasformazione del CIGAR serve a rendere interpretabili gli eventi di allineamento utili al breakpoint calling.
-
-### Da verificare
+La trasformazione del CIGAR aiuta a rendere interpretabili:
 
 - soft clipping
 - split alignment
 - porzioni mappate su regioni diverse
-- coerenza dell'evento chimerico
+- segnali chimerici
+
+::: {.small}
+Questa è una fase computazionale, non una conclusione clinica.
+:::
 
 ---
 
-## Candidate breakpoint calling
+## Breakpoint calling
 
 Il software produce candidati.
 
-### Il candidato non è ancora un risultato clinico
+Poi servono:
 
-Serve filtrare e contestualizzare.
-
----
-
-## Initial breakpoint filtering
-
-Il filtering iniziale serve a ridurre:
-
-- falsi positivi
-- mapping ambigui
-- eventi tecnici
-- breakpoint con supporto insufficiente
-
----
-
-## Gene annotation
-
-Dopo il breakpoint calling, il metodo annota i geni coinvolti.
-
-### Attenzione
-
-Il nome GeneA–GeneB non basta.
-
-Serve sapere:
-
-- breakpoint
-- esoni coinvolti
-- trascritto
-- frame
-- supporto analitico
+- filtri iniziali
+- annotazione genica
+- frame-ness
+- exon-boundary
+- visualizzazione
+- revisione del supporto analitico
 
 ---
 
 ## Frame-ness
 
-SplitFusion viene descritto come capace di inferire il frame-ness del trascritto di fusione.
+Domande:
 
-### Domanda MTB
-
-La fusione è:
-
-- in-frame?
-- out-of-frame?
-- coerente con un meccanismo oncogenico?
-- supportata da evidenza sufficiente?
+- la fusione è in-frame?
+- conserva domini funzionali?
+- è coerente con un meccanismo oncogenico?
+- il trascritto è plausibile?
+- esiste evidenza clinica associata?
 
 ---
 
-## Exon-boundary alignments
+## Dependencies
 
-Il materiale richiama la capacità di valutare gli allineamenti a confine esonico.
-
-### Perché conta
-
-Per interpretare:
-
-- plausibilità trascrizionale
-- coerenza con il gene model
-- possibili artefatti
-- reportabilità
-
----
-
-## Unique DNA/RNA fragment ligation sites
-
-Il materiale indica anche il calcolo del numero di siti di ligazione/frammenti unici DNA/RNA.
-
-### Audit
-
-Supporto da molte letture duplicate ≠ supporto da frammenti indipendenti.
-
----
-
-## SplitFusion-Target
-
-Il materiale descrive una modalità **SplitFusion-Target** per miglioramento continuo basato sull'evidenza nel reporting clinico.
-
-### Interpretazione didattica
-
-Utile per passare da:
-
-- ricerca ampia
-- a reporting mirato
-- con accumulo di evidenza strutturata
-
----
-
-## Dependencies — risorse genomiche
-
-Nel materiale sono citati:
+Il materiale SplitFusion richiama:
 
 - human genome reference
-- esempi di download hg19
-- organizzazione locale dei database
-
-### Messaggio pratico
-
-La pipeline dipende fortemente da reference e annotazioni coerenti.
-
----
-
-## Dependencies — tool principali
-
-Il materiale include installazione/uso di:
-
 - samtools
 - BWA
 - bedtools
 - perl
 - R
 - Python
+- snpEff / ANNOVAR
+
+::: {.takehome}
+Reference e annotazioni influenzano direttamente il risultato.
+:::
 
 ---
 
-## Annotation tools
-
-SplitFusion usa di default:
-
-# snpEff
-
-e supporta anche:
-
-# ANNOVAR
-
-### Implicazione
-
-La scelta dell'annotatore può influenzare interpretazione e report.
-
----
-
-## Esempi di setup
-
-Il materiale mostra esempi pratici come:
+## Comandi esempio
 
 ```bash
 git clone https://github.com/lh3/bwa.git
@@ -509,184 +435,56 @@ cd bwa
 make
 ```
 
-e installazione di pacchetti R:
-
 ```r
 install.packages(c("Rcpp", "data.table", "plyr"))
 ```
-
----
-
-## Installazione SplitFusion
-
-Nel materiale viene indicato il clone del repository:
 
 ```bash
 cd /home/user1/tools/
 git clone https://github.com/Zheng-NGS-Lab/SplitFusion.git
 ```
 
-### Per una masterclass
+---
 
-Non serve installare tutto dal vivo.
+## Pitfall SplitFusion
 
-Serve capire cosa influenza il risultato.
+# Software call ≠ clinical result
+
+Una fusione candidata deve passare attraverso:
+
+1. evidenza analitica
+2. controllo QC
+3. interpretazione biologica
+4. framework clinico
+5. documentazione
 
 ---
 
-# MODULO 3
+# MODULO 3 {.inverse .center}
 
-## Integrazione MTB
-
----
-
-## Dal candidato di fusione al report
-
-```text
-Reads
-  ↓
-alignment
-  ↓
-split-read evidence
-  ↓
-candidate breakpoint
-  ↓
-filtering
-  ↓
-gene / exon / frame annotation
-  ↓
-clinical framework
-  ↓
-MTB discussion
-  ↓
-report
-```
+## MTBP come modello decisionale
 
 ---
 
-## Audit fusion call
+## Molecular Tumor Board Portal
 
-Domande minime:
+MTBP è un clinical decision support system per precision oncology.
 
-- quanti split reads?
-- quanti frammenti indipendenti?
-- il breakpoint è coerente?
-- la fusione è in-frame?
-- ci sono ambiguità di mapping?
-- la fusione è compatibile con il tumore?
-- il tier e l'actionability sono chiari?
+La logica utile per la masterclass:
+
+# molecular profile → clinical action
+
+con processo condiviso e report strutturato.
 
 ---
 
-## Errore comune 1
+## Tre livelli da separare
 
-# Detection = interpretation
-
-No.
-
-Il software rileva un candidato, ma il MTB deve valutare evidenza, contesto e significato.
-
----
-
-## Errore comune 2
-
-# Reproducibility = clinical validity
-
-No.
-
-Un workflow riproducibile è necessario, ma non sufficiente per la validità clinica.
-
----
-
-## Errore comune 3
-
-# Tiering = decision
-
-No.
-
-Il tiering struttura l'evidenza.
-
-La decisione include trade-off, alternative, preferenze, contesto e documentazione.
-
----
-
-## Tre indicazioni finali
-
-### 1 — Evidence first
-
-Il livello analitico viene prima del livello clinico.
-
----
-
-## Tre indicazioni finali
-
-### 2 — Keep frameworks separate
-
-AMP/ASCO/CAP ed ESCAT rispondono a domande diverse.
-
----
-
-## Tre indicazioni finali
-
-### 3 — Document uncertainty
-
-Dichiarare sempre cosa è certo, cosa è probabile e cosa resta ignoto.
-
----
-
-## Materiali
-
-[Apri la pagina materiali](materiali.html)
-
-[Scarica ZIP dei tre HTML originali](downloads/materiali-originali-fusion-2026.zip)
-
----
-
----
-
-# MODULO 4
-
-## MTBP: dal dato alla decisione
-
-### Tamborero et al., Nature Cancer 2022
-
-Il Molecular Tumor Board Portal (MTBP) è un clinical decision support system sviluppato nel contesto Cancer Core Europe.
-
-Il principio didattico che ci interessa è:
-
-# dato molecolare → funzione → contesto → actionability → decisione
-
----
-
-## Perché un CDSS nel Molecular Tumor Board?
-
-L'interpretazione manuale deve integrare:
-
-- risorse genomiche diverse
-- criteri di annotazione
-- priorità di actionability
-- trial disponibili
-- informazioni cliniche e patologiche
-
-### Obiettivo
-
-Ridurre procedure manuali, aumentare consistenza e strutturare la discussione MTB.
-
----
-
-## Tre livelli da non confondere
-
-### 1. Functional
-
-La variante altera la funzione dell'allele?
-
-### 2. Biological
-
-Il tumore mostra il fenotipo biologico coerente?
-
-### 3. Clinical
-
-Quel contesto aumenta la probabilità di beneficio clinico?
+| Livello | Domanda |
+|---|---|
+| Functional | L'allele è alterato funzionalmente? |
+| Biological | Il tumore mostra un fenotipo coerente? |
+| Clinical | Il dato è actionable nel setting? |
 
 ---
 
@@ -694,280 +492,189 @@ Quel contesto aumenta la probabilità di beneficio clinico?
 
 ### Functional
 
-La variante **BRCA1** è loss-of-function?
+La variante BRCA1 è loss-of-function?
 
 ### Biological
 
-Le cellule tumorali sono realmente **HRR-defective**?
+Il tumore è HRR-defective?
 
 ### Clinical
 
-Questo aumenta la sensibilità del tumore a **PARP inhibitors**?
+Aumenta la sensibilità a PARP inhibitors nel contesto specifico?
 
-# Una variante non equivale automaticamente a una decisione terapeutica.
-
----
-
-## Interpretazione allele-centric
-
-Nel framework MTBP la rilevanza funzionale viene inizialmente interpretata a livello dell'allele.
-
-Una variante BRCA1 nota per compromettere la funzione può quindi essere classificata come funzionalmente rilevante prima di considerare:
-
-- origine germinale/somatica
-- secondo allele
-- tipo tumorale
-
-Questi elementi entrano successivamente nell'analisi di actionability.
+::: {.warn}
+BRCA1 variant ≠ automatica terapia.
+:::
 
 ---
 
-## Evidence A · Curated effect
+## Gerarchia di evidenza funzionale
 
-Prima domanda:
+### Evidence A
 
-# esiste un effetto già curato?
+Effetto curato in knowledge base.
 
-Il framework integra risorse specialistiche e popolazionali.
+### Evidence B
 
-L'effetto noto costituisce il livello superiore della gerarchia di evidenza funzionale.
+Assunzioni biologiche solide.
 
----
+### Evidence C
 
-## Evidence B · Bona fide biological assumptions
+Stime computazionali.
 
-Se l'effetto non è già sufficientemente curato:
-
-- consequence type
-- nonsense / frameshift
-- splice donor/acceptor
-- posizione nel trascritto
-- regioni critiche della proteina
-
-possono sostenere una classificazione funzionale.
+::: {.takehome}
+La predizione è il livello più debole.
+:::
 
 ---
 
-## Evidence C · Computational estimation
+## Unknown relevance
 
-Solo dopo i livelli precedenti vengono utilizzate metriche computazionali.
+Un sistema maturo deve saper dire:
 
-Nel paper sono discussi:
+# effetto funzionale sconosciuto
 
-- mutation hotspots
-- functional impact prediction
-- CADD per specifici scenari
+Nel paper MTBP, molte varianti restano non classificabili funzionalmente.
 
-# Predizione ≠ evidenza clinica.
-
----
-
-## Unknown relevance è un risultato
-
-Nel cohort CCE:
-
-- **26%** delle mutazioni tumorali → funzionalmente rilevanti
-- **9%** → funzionalmente neutrali
-- **65%** → effetto funzionale non classificato
-
-### Lezione
-
-Un sistema serio deve poter restituire:
-
-# “non sappiamo”
+Questo è un risultato, non un fallimento.
 
 ---
 
 ## Biomarker matching
 
-MTBP distingue almeno tre modalità:
+MTBP considera:
 
-1. variante specifica
-2. categoria di variante
-3. entità funzionale
-
-Esempi:
-
-- BRAF p.V600E
-- EGFR in-frame deletion exon 19
-- FLT3 oncogenic mutation
-
----
-
-## Variant match non basta
-
-L'actionability considera anche:
-
-- concordanza tra biomarker e tipo tumorale
-- sottotipo
+- variante specifica
+- categoria di variante
+- entità funzionale
+- tipo tumorale
 - alterazioni co-occorrenti
-- livello dell'evidenza clinica
-
-### Solo dopo
-
-si passa al ranking di actionability.
+- livello di evidenza
 
 ---
 
-## ESCAT nel workflow MTBP
+## ESCAT nel workflow
 
-Il paper utilizza la scala ESMO-ESCAT.
+Il ranking di actionability deve tenere insieme:
 
-In modo concettuale:
-
-- **I** → ready for use
-- **II** → investigational
-- **III** → cancer / mutation repurposing
-- **IV** → preclinical / in silico
-
-### Masterclass
-
-Non memorizzare soltanto il tier: ricostruire perché il caso è stato assegnato a quel livello.
+```text
+biomarker
++ cancer type
++ setting
++ clinical evidence
++ available options
+```
 
 ---
 
-## Cohort reale
+## Tumor-only caveat
 
-Il report descrive:
+La VAF tumorale da sola non basta per definire:
 
-# 500 tumori solidi avanzati
+- origine germinale
+- origine somatica
+- clonality
+- actionability
 
-profilati nel contesto Cancer Core Europe.
-
-Tra questi erano presenti anche tumori epiteliali ovarici.
-
-### Per il nostro corso
-
-Questo collega il framework MTB alla genomica ovarica senza trasformare il paper in una guideline specifica per HGSOC.
-
----
-
-## Tumor-only: un caveat importante
-
-Il paper mostra un limite concreto del ragionamento basato solo sulla VAF tumorale.
-
-Alcune varianti germinali mostravano VAF tumorale bassa e avrebbero potuto non essere riconosciute come potenzialmente germinali usando solo tumor-only.
-
-# VAF ≠ origine germinale/somatica
+::: {.takehome}
+VAF ≠ origine.
+:::
 
 ---
 
 ## Genetic counseling alerts
 
-MTBP integra anche alert per varianti germinali che richiedono valutazione specialistica.
-
-### Implicazione
-
-Il workflow MTB non termina con la terapia.
-
-Può generare anche:
+Un sistema MTB può generare anche:
 
 - referral genetico
-- approfondimenti
+- approfondimenti germinali
 - implicazioni familiari
+- necessità di consulenza specialistica
+
+Non solo indicazioni terapeutiche.
 
 ---
 
 ## Report interattivo
 
-Il modello MTBP utilizza report HTML con:
+Il report MTBP include concettualmente:
 
-- dashboard clinico-patologica
+- dashboard paziente
 - firme genomiche
 - alterazioni classificate
 - evidenza funzionale
 - actionability
 - dettagli interrogabili
 
-### Collegamento con Fusion 2026
-
-Questa è anche la logica del nostro repository Quarto:
-
-# materiale navigabile, verificabile e scaricabile
+::: {.small}
+È la stessa logica che usiamo in Quarto: navigabile, verificabile, scaricabile.
+:::
 
 ---
 
-## Automation ≠ autonomous decision
+# ESERCITAZIONE {.inverse .center}
 
-MTBP automatizza:
-
-- integrity checks
-- armonizzazione
-- annotazione
-- variant interpretation
-- preparazione del report
-
-Ma la raccomandazione resta discussa nel Molecular Tumor Board.
-
-# Supporto decisionale, non sostituzione dell'esperto.
+## 7 minuti
 
 ---
 
-## Efficienza operativa
-
-Nel sistema descritto:
-
-- turnaround complessivo riportato: **<14 giorni** dalla biopsia al report
-- dopo una learning curve di circa **25 pazienti**
-- discussione media: **<3 minuti per caso**
-
-### Lezione
-
-Standardizzazione e interfacce strutturate possono rendere scalabile l'MTB.
-
----
-
-# ESERCITAZIONE
-
-## 5 minuti · Audit di un caso ovarico
-
-Caso didattico:
+## Caso didattico
 
 ```text
-HGSOC
-BRCA1 loss-of-function candidate
-Tumor-only NGS
-VAF 0.18
-HRD status: non disponibile
+Tumore: HGSOC
+Dato: tumor-only NGS
+Variante: BRCA1 candidate LoF
+VAF: 0.18
+HRD: non disponibile
 ```
 
-### Domanda 1
+### Compito
 
-Cosa puoi affermare direttamente sulla funzione dell'allele?
+Separare:
 
-### Domanda 2
-
-Cosa NON puoi dedurre dalla sola VAF?
-
-### Domanda 3
-
-Quale informazione manca prima di passare da functional a biological/clinical interpretation?
+1. dato osservato
+2. inferenza funzionale
+3. inferenza biologica
+4. actionability
+5. informazione mancante
 
 ---
 
 ## Soluzione guidata
 
-### Possibile conclusione
+### Osservato
 
-**Functional:** la classificazione LoF deve essere sostenuta dall'evidenza sulla variante.
+Tumor-only, BRCA1 candidate LoF, VAF 0.18.
 
-**Origin:** VAF 0.18 non dimostra origine somatica.
+### Non dimostrato
 
-**Biological:** una variante BRCA1 non dimostra da sola HRD del tumore.
+- origine germinale/somatica
+- HRD
+- sensibilità a PARPi
+- indicazione terapeutica
 
-**Clinical:** l'actionability richiede contesto tumorale, biomarker match e livello di evidenza.
+### Da richiedere
+
+- validazione variante
+- matched normal o percorso germinale
+- HRD / LOH / CN
+- contesto clinico e linee guida
 
 ---
 
-## Audit con AI
+## Prompt AI consigliato
 
-Prompt didattico:
+```text
+Classifica separatamente:
+1. evidenza analitica osservata
+2. interpretazione funzionale
+3. interpretazione biologica
+4. actionability clinica
+5. conclusioni non supportate
+6. dati mancanti
 
-> Classifica separatamente ciò che è dimostrato, ciò che è inferito e ciò che manca. Non proporre una terapia finché non hai distinto functional, biological e clinical interpretation.
-
-### Compito
-
-Confrontare la risposta dell'AI con la checklist MTBP.
+Non proporre terapia senza livello di evidenza e contesto clinico.
+```
 
 ---
 
@@ -975,51 +682,74 @@ Confrontare la risposta dell'AI con la checklist MTBP.
 
 L'AI ha:
 
-- separato variante e biomarker?
-- distinto funzione e actionability?
-- evitato di inferire germline/somatic da VAF?
-- esplicitato le informazioni mancanti?
-- dichiarato l'incertezza?
-- mantenuto la decisione finale nel dominio MTB?
+- separato functional, biological e clinical?
+- evitato di dedurre germinale/somatico da VAF?
+- dichiarato HRD come mancante?
+- distinto tiering da decisione?
+- segnalato incertezza?
+- mantenuto la decisione nel MTB?
 
 ---
 
-## Take-home framework
+## Tre indicazioni finali
 
-```text
-NGS result
-    ↓
-Analytical validity
-    ↓
-Functional relevance
-    ↓
-Tumor context
-    ↓
-Biomarker matching
-    ↓
-Evidence / ESCAT
-    ↓
-MTB recommendation
-    ↓
-Structured report
-```
+### 1 — Evidence first
+
+# Detection ≠ interpretation
+
+La chiamata bioinformatica non è ancora una conclusione clinica.
 
 ---
 
-## Lettura scientifica
+## Tre indicazioni finali
 
-Tamborero D. et al.
+### 2 — Frameworks matter
 
-**The Molecular Tumor Board Portal supports clinical decisions and automated reporting for precision oncology.**
+# Tiering ≠ actionability
 
-*Nature Cancer* 2022;3:251–261.
+AMP/ASCO/CAP ed ESCAT rispondono a domande diverse.
 
-DOI: 10.1038/s43018-022-00332-x
+---
 
-[Scarica il PDF fornito per il corso](downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf)
+## Tre indicazioni finali
 
-## Fine
+### 3 — Human verification
 
-# Molecular Tumor Board
+# AI support ≠ clinical decision
 
-### Decision Framework & SplitFusion
+L'AI può aiutare a strutturare il ragionamento, ma non sostituisce revisione, verifica e firma professionale.
+
+---
+
+## Materiali scaricabili
+
+[Apri pagina materiali](materiali.html)
+
+[Scarica ZIP materiali originali](downloads/materiali-originali-fusion-2026.zip)
+
+[Scarica PDF MTBP](downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf)
+
+---
+
+## Controllo contenuti
+
+[Apri pagina controllo](controllo.html)
+
+Questa pagina elenca cosa è stato incluso da:
+
+- index originale
+- framework
+- SplitFusion
+- paper MTBP
+
+---
+
+## Fine {.inverse .center}
+
+# Fusion 2026
+
+### Framework decisionale · SplitFusion · MTBP · verifica umana
+
+::: {.takehome}
+Evidence first. Context second. AI third. Human verification always.
+:::
