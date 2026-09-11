@@ -1,4 +1,4 @@
-/* Same visual language as previous masterclass */
+/* Fusion 2026 — stile coerente con masterclass precedente */
 :root {
   --navy:#122235;
   --teal:#1f7f83;
@@ -14,11 +14,12 @@ body { font-family:"Aptos","Segoe UI",Arial,sans-serif; }
   text-transform:none;
   letter-spacing:-0.025em;
 }
+.reveal h1 { font-size:2.25em; }
 .reveal h2 {
   border-bottom:4px solid var(--teal);
   padding-bottom:.18em;
 }
 .reveal strong { color:var(--teal); }
 .reveal .small { font-size:.65em; color:var(--muted); }
-.reveal table { font-size:.72em; }
+.reveal table { font-size:.7em; }
 .reveal pre code { max-height:520px; }
