@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "fonti.html",
+    "href": "fonti.html",
+    "title": "Fonti del nuovo repository",
+    "section": "",
+    "text": "Il repository è costruito esclusivamente a partire da:\n\nindex(1).html — Molecular Tumor Board — Simulation Handbook\n02_framework(1).html — Framework di decisione AMP/ASCO/CAP & ESCAT\n08_Fusion2(1).html — SplitFusion — Introduzione e Guida Rapida\n\nNon sono stati aggiunti casi clinici, dataset BAM/FASTQ o moduli ulteriori."
+  },
+  {
+    "objectID": "index.html#molecular-tumor-board",
+    "href": "index.html#molecular-tumor-board",
+    "title": "Molecular Tumor Board",
+    "section": "Molecular Tumor Board",
+    "text": "Molecular Tumor Board"
+  },
+  {
+    "objectID": "index.html#a-chi-è-rivolto",
+    "href": "index.html#a-chi-è-rivolto",
+    "title": "Molecular Tumor Board",
+    "section": "A chi è rivolto",
+    "text": "A chi è rivolto\nIl corso originale è pensato per:\n\nspecializzandi\nbiologi molecolari\nbioinformatici\nclinici interessati ai Molecular Tumor Board\n\nPrerequisiti indicati:\n\nbasi di NGS\nvarianti somatiche\nRNA-seq"
+  },
+  {
+    "objectID": "index.html#come-usare-il-corso",
+    "href": "index.html#come-usare-il-corso",
+    "title": "Molecular Tumor Board",
+    "section": "Come usare il corso",
+    "text": "Come usare il corso\nLa struttura originale dei capitoli segue:"
+  },
+  {
+    "objectID": "index.html#framework-di-decisione",
+    "href": "index.html#framework-di-decisione",
+    "title": "Molecular Tumor Board",
+    "section": "Framework di decisione",
+    "text": "Framework di decisione"
+  },
+  {
+    "objectID": "index.html#dal-risultato-ngs-alla-decisione-clinica",
+    "href": "index.html#dal-risultato-ngs-alla-decisione-clinica",
+    "title": "Molecular Tumor Board",
+    "section": "Dal risultato NGS alla decisione clinica",
+    "text": "Dal risultato NGS alla decisione clinica\nIl framework propone cinque passaggi:\n\nQualità e contesto del dato\nTiering AMP/ASCO/CAP\nActionability clinica ESCAT\nTrade-off\nDocumentazione"
+  },
+  {
+    "objectID": "index.html#qualità-e-contesto-del-dato",
+    "href": "index.html#qualità-e-contesto-del-dato",
+    "title": "Molecular Tumor Board",
+    "section": "1. Qualità e contesto del dato",
+    "text": "1. Qualità e contesto del dato\nPrima dell’interpretazione:\n\ncopertura\npurezza\ncoerenza istologica\nmetodo\ntumor-only vs matched"
+  },
+  {
+    "objectID": "index.html#tiering-ampascocap",
+    "href": "index.html#tiering-ampascocap",
+    "title": "Molecular Tumor Board",
+    "section": "2. Tiering AMP/ASCO/CAP",
+    "text": "2. Tiering AMP/ASCO/CAP\nIl materiale originale applica il tiering a:\n\nvarianti\namplificazioni\nfusioni\n\ncon classificazione:"
+  },
+  {
+    "objectID": "index.html#actionability-escat",
+    "href": "index.html#actionability-escat",
+    "title": "Molecular Tumor Board",
+    "section": "3. Actionability — ESCAT",
+    "text": "3. Actionability — ESCAT\nIl materiale distingue il tiering della variante dalla:"
+  },
+  {
+    "objectID": "index.html#trade-off-clinico",
+    "href": "index.html#trade-off-clinico",
+    "title": "Molecular Tumor Board",
+    "section": "4. Trade-off clinico",
+    "text": "4. Trade-off clinico\nLa decisione finale considera:\n\nbeneficio atteso\ntossicità\nlogistica\npreferenze del paziente\n\nIl risultato genomico non è la decisione clinica"
+  },
+  {
+    "objectID": "index.html#documentazione",
+    "href": "index.html#documentazione",
+    "title": "Molecular Tumor Board",
+    "section": "5. Documentazione",
+    "text": "5. Documentazione\nIl framework prevede di documentare:\n\nraccomandazione primaria\nalternative\ntrial\nfollow-up"
+  },
+  {
+    "objectID": "index.html#aleatoric-vs-epistemic",
+    "href": "index.html#aleatoric-vs-epistemic",
+    "title": "Molecular Tumor Board",
+    "section": "Aleatoric vs Epistemic",
+    "text": "Aleatoric vs Epistemic\nAleatoric uncertainty\nIncertezza intrinseca.\nEpistemic uncertainty\nIncertezza dovuta a:\n\nlimiti del modello\nlimiti del dato\nesempio: tumor-only"
+  },
+  {
+    "objectID": "index.html#checkpoint-mtb",
+    "href": "index.html#checkpoint-mtb",
+    "title": "Molecular Tumor Board",
+    "section": "Checkpoint MTB",
+    "text": "Checkpoint MTB\nPrima di discutere actionability:\n\nil dato è tecnicamente affidabile?\nil contesto è coerente?\nil tier è appropriato?\nil livello ESCAT è chiaro?\nl’incertezza è dichiarata?"
+  },
+  {
+    "objectID": "index.html#splitfusion",
+    "href": "index.html#splitfusion",
+    "title": "Molecular Tumor Board",
+    "section": "SplitFusion",
+    "text": "SplitFusion"
+  },
+  {
+    "objectID": "index.html#perché-le-fusioni-contano",
+    "href": "index.html#perché-le-fusioni-contano",
+    "title": "Molecular Tumor Board",
+    "section": "Perché le fusioni contano",
+    "text": "Perché le fusioni contano\nNel materiale originale, le fusioni geniche sono presentate come importanti in oncologia di precisione.\nEsempi citati:\n\nBCR-ABL\nEML4-ALK\n\nL’accurata rilevazione delle fusioni è quindi parte del matching molecolare."
+  },
+  {
+    "objectID": "index.html#perché-le-fusioni-sono-difficili",
+    "href": "index.html#perché-le-fusioni-sono-difficili",
+    "title": "Molecular Tumor Board",
+    "section": "Perché le fusioni sono difficili",
+    "text": "Perché le fusioni sono difficili\nIl materiale evidenzia diverse criticità:\n\npartner di fusione numerosi o sconosciuti\nbassa espressione genica\nespressione proteica non specifica per fusione\nsplice site criptici\nbassa diversità di sequenza ai breakpoint\ndifficoltà di mapping\ncampioni di qualità o quantità limitata\nbassa cellularità tumorale"
+  },
+  {
+    "objectID": "index.html#anchored-multiplex-pcr",
+    "href": "index.html#anchored-multiplex-pcr",
+    "title": "Molecular Tumor Board",
+    "section": "Anchored Multiplex PCR",
+    "text": "Anchored Multiplex PCR\nNel materiale originale, l’AMP è presentato come approccio capace di affrontare diverse criticità della diagnostica delle fusioni.\nSplitFusion può essere utilizzato con:\n\nRNA-seq\nAnchored Multiplex PCR"
+  },
+  {
+    "objectID": "index.html#splitfusion-principio",
+    "href": "index.html#splitfusion-principio",
+    "title": "Molecular Tumor Board",
+    "section": "SplitFusion — principio",
+    "text": "SplitFusion — principio\nSplitFusion sfrutta:"
+  },
+  {
+    "objectID": "index.html#splitfusion-workflow",
+    "href": "index.html#splitfusion-workflow",
+    "title": "Molecular Tumor Board",
+    "section": "SplitFusion — workflow",
+    "text": "SplitFusion — workflow\n\nReference alignment e deduplication\nCIGAR transformation\nCandidate breakpoint calling\nInitial breakpoint filtering\nBreakpoint gene annotation\nFrame-ness\nExon-boundary analysis\nFurther filtering / target reporting\nResult reporting and visualization"
+  },
+  {
+    "objectID": "index.html#cosa-aggiunge-al-reporting",
+    "href": "index.html#cosa-aggiunge-al-reporting",
+    "title": "Molecular Tumor Board",
+    "section": "Cosa aggiunge al reporting",
+    "text": "Cosa aggiunge al reporting\nIl materiale indica capacità di:\n\ninferire il frame-ness\nvalutare exon-boundary alignments\ncalcolare il numero di unique DNA/RNA fragment ligation sites\nutilizzare modalità target per affinare il reporting"
+  },
+  {
+    "objectID": "index.html#dependencies",
+    "href": "index.html#dependencies",
+    "title": "Molecular Tumor Board",
+    "section": "Dependencies",
+    "text": "Dependencies\nNel materiale sono indicate dipendenze e risorse come:\n\nhuman genome reference\nsamtools\naltri tool necessari all’esecuzione\n\nL’obiettivo della lezione originale è fornire una guida pratica all’installazione e uso."
+  },
+  {
+    "objectID": "index.html#audit-di-una-fusione",
+    "href": "index.html#audit-di-una-fusione",
+    "title": "Molecular Tumor Board",
+    "section": "Audit di una fusione",
+    "text": "Audit di una fusione\nQuando si valuta una fusione, separare:\nevidenza analitica\nda\ninterpretazione biologica\nda\nrilevanza clinica"
+  },
+  {
+    "objectID": "index.html#domanda-per-la-masterclass",
+    "href": "index.html#domanda-per-la-masterclass",
+    "title": "Molecular Tumor Board",
+    "section": "Domanda per la masterclass",
+    "text": "Domanda per la masterclass"
+  },
+  {
+    "objectID": "index.html#framework-splitfusion",
+    "href": "index.html#framework-splitfusion",
+    "title": "Molecular Tumor Board",
+    "section": "Framework + SplitFusion",
+    "text": "Framework + SplitFusion\nFusion candidate\n    ↓\nanalytical evidence\n    ↓\nquality / context\n    ↓\nAMP/ASCO/CAP tier\n    ↓\nESCAT actionability\n    ↓\ntrade-off\n    ↓\ndocumentation"
+  },
+  {
+    "objectID": "index.html#tre-indicazioni-finali",
+    "href": "index.html#tre-indicazioni-finali",
+    "title": "Molecular Tumor Board",
+    "section": "Tre indicazioni finali",
+    "text": "Tre indicazioni finali\n1"
+  },
+  {
+    "objectID": "index.html#tre-indicazioni-finali-1",
+    "href": "index.html#tre-indicazioni-finali-1",
+    "title": "Molecular Tumor Board",
+    "section": "Tre indicazioni finali",
+    "text": "Tre indicazioni finali\n2"
+  },
+  {
+    "objectID": "index.html#tre-indicazioni-finali-2",
+    "href": "index.html#tre-indicazioni-finali-2",
+    "title": "Molecular Tumor Board",
+    "section": "Tre indicazioni finali",
+    "text": "Tre indicazioni finali\n3"
+  },
+  {
+    "objectID": "index.html#materiali",
+    "href": "index.html#materiali",
+    "title": "Molecular Tumor Board",
+    "section": "Materiali",
+    "text": "Materiali\nScarica i tre file originali\n\nindice/introduzione del corso\nframework AMP/ASCO/CAP + ESCAT\nSplitFusion"
+  },
+  {
+    "objectID": "index.html#end",
+    "href": "index.html#end",
+    "title": "Molecular Tumor Board",
+    "section": "End",
+    "text": "End"
+  },
+  {
+    "objectID": "materiali.html",
+    "href": "materiali.html",
+    "title": "Materiali scaricabili",
+    "section": "",
+    "text": "File originali\n\nIndex / Molecular Tumor Board — Simulation Handbook\nFramework AMP/ASCO/CAP + ESCAT\nSplitFusion — Introduzione e Guida Rapida\n\n\n\nPacchetto ZIP\n\nScarica tutti i file originali\n\n\n\n\n\n\n\nNote\n\n\n\nQuesta pagina contiene esclusivamente i tre materiali forniti per il nuovo repository."
+  }
+]
