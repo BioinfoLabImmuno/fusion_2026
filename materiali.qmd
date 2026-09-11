@@ -1,0 +1,17 @@
+---
+title: "Materiali scaricabili"
+---
+
+# File originali
+
+- [Index / Molecular Tumor Board — Simulation Handbook](originali/index_originale.html)
+- [Framework AMP/ASCO/CAP + ESCAT](originali/02_framework_originale.html)
+- [SplitFusion — Introduzione e Guida Rapida](originali/08_SplitFusion_originale.html)
+
+# Pacchetto ZIP
+
+- [Scarica tutti i file originali](downloads/materiali-originali.zip)
+
+::: {.callout-note}
+Questa pagina contiene esclusivamente i tre materiali forniti per il nuovo repository.
+:::

@@ -1,0 +1,24 @@
+/* Same visual language as previous masterclass */
+:root {
+  --navy:#122235;
+  --teal:#1f7f83;
+  --cyan:#70d3d5;
+  --muted:#637380;
+}
+body { font-family:"Aptos","Segoe UI",Arial,sans-serif; }
+.navbar { background:var(--navy)!important; }
+.navbar a { color:white!important; }
+.reveal { font-family:"Aptos","Segoe UI",Arial,sans-serif; }
+.reveal h1,.reveal h2,.reveal h3 {
+  color:var(--navy);
+  text-transform:none;
+  letter-spacing:-0.025em;
+}
+.reveal h2 {
+  border-bottom:4px solid var(--teal);
+  padding-bottom:.18em;
+}
+.reveal strong { color:var(--teal); }
+.reveal .small { font-size:.65em; color:var(--muted); }
+.reveal table { font-size:.72em; }
+.reveal pre code { max-height:520px; }

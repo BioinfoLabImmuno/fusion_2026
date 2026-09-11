@@ -1,0 +1,359 @@
+---
+title: "Molecular Tumor Board"
+subtitle: "Decision Framework & SplitFusion"
+author: "Masterclass per biologi clinici e bioinformatici"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    progress: true
+    controls: true
+    transition: fade
+    center: false
+    chalkboard: true
+    preview-links: true
+    footer: "Educational material · adapted from supplied course files"
+    css: styles.css
+---
+
+## Molecular Tumor Board
+
+# Dal risultato NGS alla decisione
+
+Questa mini-masterclass integra due moduli:
+
+1. **Framework di decisione**
+2. **SplitFusion**
+
+::: {.small}
+I contenuti sono adattati esclusivamente dai tre file forniti.
+:::
+
+---
+
+## A chi è rivolto
+
+Il corso originale è pensato per:
+
+- specializzandi
+- biologi molecolari
+- bioinformatici
+- clinici interessati ai Molecular Tumor Board
+
+Prerequisiti indicati:
+
+- basi di NGS
+- varianti somatiche
+- RNA-seq
+
+---
+
+## Come usare il corso
+
+La struttura originale dei capitoli segue:
+
+# Obiettivi → Dati/Metodi → Analisi → Output/Report → Riferimenti
+
+Con:
+
+- suggerimenti pratici
+- pitfall
+- checklist operative
+
+---
+
+# MODULO 1
+
+## Framework di decisione
+
+---
+
+## Dal risultato NGS alla decisione clinica
+
+Il framework propone cinque passaggi:
+
+1. **Qualità e contesto del dato**
+2. **Tiering AMP/ASCO/CAP**
+3. **Actionability clinica ESCAT**
+4. **Trade-off**
+5. **Documentazione**
+
+---
+
+## 1. Qualità e contesto del dato
+
+Prima dell'interpretazione:
+
+- copertura
+- purezza
+- coerenza istologica
+- metodo
+- tumor-only vs matched
+
+# Il dato deve essere interpretabile prima di essere classificato
+
+---
+
+## 2. Tiering AMP/ASCO/CAP
+
+Il materiale originale applica il tiering a:
+
+- varianti
+- amplificazioni
+- fusioni
+
+con classificazione:
+
+# Tier I–IV
+
+---
+
+## 3. Actionability — ESCAT
+
+Il materiale distingue il tiering della variante dalla:
+
+# forza dell'evidenza clinica
+
+ESCAT viene utilizzato per descrivere livelli di actionability.
+
+---
+
+## 4. Trade-off clinico
+
+La decisione finale considera:
+
+- beneficio atteso
+- tossicità
+- logistica
+- preferenze del paziente
+
+### Il risultato genomico non è la decisione clinica
+
+---
+
+## 5. Documentazione
+
+Il framework prevede di documentare:
+
+- raccomandazione primaria
+- alternative
+- trial
+- follow-up
+
+---
+
+## Aleatoric vs Epistemic
+
+### Aleatoric uncertainty
+
+Incertezza intrinseca.
+
+### Epistemic uncertainty
+
+Incertezza dovuta a:
+
+- limiti del modello
+- limiti del dato
+- esempio: tumor-only
+
+---
+
+## Checkpoint MTB
+
+Prima di discutere actionability:
+
+1. il dato è tecnicamente affidabile?
+2. il contesto è coerente?
+3. il tier è appropriato?
+4. il livello ESCAT è chiaro?
+5. l'incertezza è dichiarata?
+
+---
+
+# MODULO 2
+
+## SplitFusion
+
+---
+
+## Perché le fusioni contano
+
+Nel materiale originale, le fusioni geniche sono presentate come importanti in oncologia di precisione.
+
+Esempi citati:
+
+- **BCR-ABL**
+- **EML4-ALK**
+
+L'accurata rilevazione delle fusioni è quindi parte del matching molecolare.
+
+---
+
+## Perché le fusioni sono difficili
+
+Il materiale evidenzia diverse criticità:
+
+- partner di fusione numerosi o sconosciuti
+- bassa espressione genica
+- espressione proteica non specifica per fusione
+- splice site criptici
+- bassa diversità di sequenza ai breakpoint
+- difficoltà di mapping
+- campioni di qualità o quantità limitata
+- bassa cellularità tumorale
+
+---
+
+## Anchored Multiplex PCR
+
+Nel materiale originale, l'AMP è presentato come approccio capace di affrontare diverse criticità della diagnostica delle fusioni.
+
+SplitFusion può essere utilizzato con:
+
+- **RNA-seq**
+- **Anchored Multiplex PCR**
+
+---
+
+## SplitFusion — principio
+
+SplitFusion sfrutta:
+
+# chimeric split-read alignments di BWA-MEM
+
+Il metodo è descritto come indipendente dai soli trascritti codificanti noti.
+
+---
+
+## SplitFusion — workflow
+
+1. Reference alignment e deduplication
+2. CIGAR transformation
+3. Candidate breakpoint calling
+4. Initial breakpoint filtering
+5. Breakpoint gene annotation
+6. Frame-ness
+7. Exon-boundary analysis
+8. Further filtering / target reporting
+9. Result reporting and visualization
+
+---
+
+## Cosa aggiunge al reporting
+
+Il materiale indica capacità di:
+
+- inferire il **frame-ness**
+- valutare **exon-boundary alignments**
+- calcolare il numero di **unique DNA/RNA fragment ligation sites**
+- utilizzare modalità target per affinare il reporting
+
+---
+
+## Dependencies
+
+Nel materiale sono indicate dipendenze e risorse come:
+
+- human genome reference
+- samtools
+- altri tool necessari all'esecuzione
+
+L'obiettivo della lezione originale è fornire una guida pratica all'installazione e uso.
+
+---
+
+## Audit di una fusione
+
+Quando si valuta una fusione, separare:
+
+### evidenza analitica
+
+da
+
+### interpretazione biologica
+
+da
+
+### rilevanza clinica
+
+---
+
+## Domanda per la masterclass
+
+# Una fusione chiamata dal software è automaticamente reportabile?
+
+::: fragment
+**No.**
+:::
+
+::: fragment
+Il software produce un candidato; la sua interpretazione richiede qualità, contesto e classificazione.
+:::
+
+---
+
+## Framework + SplitFusion
+
+```text
+Fusion candidate
+    ↓
+analytical evidence
+    ↓
+quality / context
+    ↓
+AMP/ASCO/CAP tier
+    ↓
+ESCAT actionability
+    ↓
+trade-off
+    ↓
+documentation
+```
+
+---
+
+## Tre indicazioni finali
+
+### 1
+
+# Detection ≠ interpretation
+
+La chiamata bioinformatica non coincide con il significato clinico.
+
+---
+
+## Tre indicazioni finali
+
+### 2
+
+# Tiering ≠ actionability
+
+AMP/ASCO/CAP ed ESCAT rispondono a domande diverse.
+
+---
+
+## Tre indicazioni finali
+
+### 3
+
+# Documentare l'incertezza
+
+Aleatoric ed epistemic uncertainty vanno rese esplicite nel processo MTB.
+
+---
+
+## Materiali
+
+[Scarica i tre file originali](materiali.html)
+
+- indice/introduzione del corso
+- framework AMP/ASCO/CAP + ESCAT
+- SplitFusion
+
+---
+
+## End
+
+# Molecular Tumor Board
+
+### Decision Framework & SplitFusion

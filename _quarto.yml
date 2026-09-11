@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - originali/**
+    - downloads/**
+
+website:
+  title: "MTB Decision Framework & SplitFusion"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Presentazione
+      - href: materiali.qmd
+        text: Materiali
+      - href: fonti.qmd
+        text: Fonti
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    code-copy: true

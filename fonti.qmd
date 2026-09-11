@@ -1,0 +1,11 @@
+---
+title: "Fonti del nuovo repository"
+---
+
+Il repository è costruito esclusivamente a partire da:
+
+1. `index(1).html` — Molecular Tumor Board — Simulation Handbook
+2. `02_framework(1).html` — Framework di decisione AMP/ASCO/CAP & ESCAT
+3. `08_Fusion2(1).html` — SplitFusion — Introduzione e Guida Rapida
+
+Non sono stati aggiunti casi clinici, dataset BAM/FASTQ o moduli ulteriori.
