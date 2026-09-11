@@ -1,6 +1,6 @@
-# Nuovo repository — MTB Framework & SplitFusion
+# Fusion 2026 — repository corretto completo
 
-Questo repository contiene solo i tre materiali forniti, adattati allo stile RevealJS della masterclass precedente.
+Questo pacchetto corregge la versione precedente includendo più materiale del file SplitFusion e una pagina di controllo contenuti.
 
 ## Render
 
@@ -10,23 +10,17 @@ quarto render
 xdg-open docs/index.html
 ```
 
-## GitHub
+## Verifiche
+
+```bash
+grep -i "reveal" docs/index.html | head
+find docs/originali docs/downloads -maxdepth 2 -type f | sort
+```
+
+## Push
 
 ```bash
 git add .
-git commit -m "Initial MTB Framework SplitFusion course"
+git commit -m "Complete Fusion 2026 material"
 git push origin main
 ```
-
-GitHub Pages:
-- branch `gh-pages`
-- folder `/ (root)`
-
-## Struttura
-
-- `index.qmd` — presentazione RevealJS
-- `materiali.qmd` — download dei file originali
-- `fonti.qmd` — provenienza dei contenuti
-- `originali/` — i tre HTML forniti
-- `downloads/` — ZIP dei materiali
-- `.github/workflows/publish.yml` — deploy automatico

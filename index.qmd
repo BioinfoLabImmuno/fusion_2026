@@ -1,6 +1,6 @@
 ---
-title: "Molecular Tumor Board"
-subtitle: "Decision Framework & SplitFusion"
+title: "Fusion 2026"
+subtitle: "Molecular Tumor Board · Framework decisionale · SplitFusion"
 author: "Masterclass per biologi clinici e bioinformatici"
 format:
   revealjs:
@@ -12,53 +12,78 @@ format:
     center: false
     chalkboard: true
     preview-links: true
-    footer: "Educational material · adapted from supplied course files"
+    footer: "Fusion 2026 · materiale didattico"
     css: styles.css
 ---
 
-## Molecular Tumor Board
+## Fusion 2026
 
-# Dal risultato NGS alla decisione
+# Molecular Tumor Board
 
-Questa mini-masterclass integra due moduli:
-
-1. **Framework di decisione**
-2. **SplitFusion**
+### Framework decisionale + SplitFusion
 
 ::: {.small}
-I contenuti sono adattati esclusivamente dai tre file forniti.
+Nuovo repository costruito solo dai tre file forniti: index, framework e SplitFusion.
 :::
 
 ---
 
-## A chi è rivolto
+## Perché questo corso
 
-Il corso originale è pensato per:
+Il materiale originale descrive un handbook interattivo per esercitarsi con:
+
+- workflow MTB
+- interpretazione dei risultati
+- comunicazione dei risultati
+- uso di tabelle di varianti
+- ragionamento secondo AMP/ASCO/CAP ed ESCAT
+
+---
+
+## Target e prerequisiti
+
+### Target
 
 - specializzandi
 - biologi molecolari
 - bioinformatici
 - clinici interessati ai Molecular Tumor Board
 
-Prerequisiti indicati:
+### Prerequisiti minimi
 
-- basi di NGS
+- NGS di base
 - varianti somatiche
 - RNA-seq
 
 ---
 
-## Come usare il corso
+## Struttura didattica originale
 
-La struttura originale dei capitoli segue:
+Ogni capitolo segue:
 
 # Obiettivi → Dati/Metodi → Analisi → Output/Report → Riferimenti
 
 Con:
 
 - suggerimenti pratici
-- pitfall
+- pitfall comuni
 - checklist operative
+
+---
+
+## Aree del corso originale
+
+Il corso originale includeva esempi su:
+
+- **Glioma / GBM IDH-wildtype**
+- **Ovaio / HGSOC**
+- **Mammella HR+/HER2−**
+- **TNBC con BRCA1**
+- **fusioni geniche da RNA-seq**
+
+::: {.small}
+In questo nuovo repository teniamo solo i materiali forniti: introduzione, framework e SplitFusion.
+:::
 
 ---
 
@@ -70,103 +95,148 @@ Con:
 
 ## Dal risultato NGS alla decisione clinica
 
-Il framework propone cinque passaggi:
+Il framework pragmatico separa:
 
-1. **Qualità e contesto del dato**
-2. **Tiering AMP/ASCO/CAP**
-3. **Actionability clinica ESCAT**
-4. **Trade-off**
-5. **Documentazione**
+1. qualità e contesto del dato
+2. tiering AMP/ASCO/CAP
+3. actionability clinica ESCAT
+4. trade-off
+5. documentazione
 
 ---
 
-## 1. Qualità e contesto del dato
+## Qualità e contesto del dato
 
-Prima dell'interpretazione:
+Prima di discutere il significato clinico:
 
 - copertura
 - purezza
 - coerenza istologica
-- metodo
+- metodo utilizzato
 - tumor-only vs matched
 
-# Il dato deve essere interpretabile prima di essere classificato
+# Il dato viene prima dell'interpretazione
 
 ---
 
-## 2. Tiering AMP/ASCO/CAP
+## Tumor-only vs matched
 
-Il materiale originale applica il tiering a:
+### Tumor-only
+
+Richiede particolare attenzione a:
+
+- origine germinale/somatica
+- contaminazione normale
+- copy number
+- VAF
+- incertezza residua
+
+### Matched tumor-normal
+
+Aiuta a separare varianti somatiche e germinali.
+
+---
+
+## Tiering AMP/ASCO/CAP
+
+Il materiale usa il tiering per:
 
 - varianti
 - amplificazioni
 - fusioni
 
-con classificazione:
+Classificazione:
 
 # Tier I–IV
 
----
+### Punto chiave
 
-## 3. Actionability — ESCAT
-
-Il materiale distingue il tiering della variante dalla:
-
-# forza dell'evidenza clinica
-
-ESCAT viene utilizzato per descrivere livelli di actionability.
+Il tiering descrive il significato della variante nel contesto clinico-molecolare.
 
 ---
 
-## 4. Trade-off clinico
+## ESCAT
 
-La decisione finale considera:
+L'actionability clinica viene letta con livelli ESCAT.
+
+### Domanda centrale
+
+Quanto è forte l'evidenza che collega:
+
+# alterazione → tumore → setting → trattamento?
+
+---
+
+## Tiering ≠ actionability
+
+Una variante può essere:
+
+- biologicamente rilevante
+- tecnicamente vera
+- classificabile
+- ma non immediatamente actionable in quel setting
+
+# Non saltare i passaggi
+
+---
+
+## Trade-off clinico
+
+Il framework include:
 
 - beneficio atteso
 - tossicità
 - logistica
 - preferenze del paziente
 
-### Il risultato genomico non è la decisione clinica
+### Messaggio
+
+La decisione MTB non è una semplice conversione automatica da variante a terapia.
 
 ---
 
-## 5. Documentazione
+## Documentazione
 
-Il framework prevede di documentare:
+Nel processo MTB vanno documentati:
 
 - raccomandazione primaria
 - alternative
-- trial
+- trial clinici
 - follow-up
+
+### Obiettivo
+
+Rendere tracciabile il ragionamento.
 
 ---
 
-## Aleatoric vs Epistemic
+## Aleatoric vs epistemic uncertainty
 
-### Aleatoric uncertainty
+### Aleatoric
 
-Incertezza intrinseca.
+Incertezza intrinseca al dato o al fenomeno osservato.
 
-### Epistemic uncertainty
+### Epistemic
 
 Incertezza dovuta a:
 
 - limiti del modello
 - limiti del dato
+- incompletezza conoscitiva
 - esempio: tumor-only
 
 ---
 
-## Checkpoint MTB
+## Checklist MTB
 
-Prima di discutere actionability:
+Prima di formulare una raccomandazione:
 
-1. il dato è tecnicamente affidabile?
-2. il contesto è coerente?
-3. il tier è appropriato?
-4. il livello ESCAT è chiaro?
-5. l'incertezza è dichiarata?
+1. il dato è tecnicamente interpretabile?
+2. il contesto istologico è coerente?
+3. il tier AMP/ASCO/CAP è definito?
+4. il livello ESCAT è pertinente?
+5. trade-off e alternative sono dichiarati?
+6. l'incertezza è documentata?
 
 ---
 
@@ -176,157 +246,381 @@ Prima di discutere actionability:
 
 ---
 
-## Perché le fusioni contano
+## Perché parlare di fusioni
 
-Nel materiale originale, le fusioni geniche sono presentate come importanti in oncologia di precisione.
+Le fusioni geniche sono rilevanti in oncologia.
 
-Esempi citati:
+Esempi citati nel materiale:
 
-- **BCR-ABL**
-- **EML4-ALK**
+- **BCR-ABL** nella leucemia mieloide cronica
+- **EML4-ALK** nel carcinoma polmonare
 
-L'accurata rilevazione delle fusioni è quindi parte del matching molecolare.
+### Obiettivo clinico
+
+Abbinare il paziente al trattamento corretto quando l'evidenza è solida.
 
 ---
 
-## Perché le fusioni sono difficili
+## Difficoltà diagnostiche delle fusioni
 
-Il materiale evidenzia diverse criticità:
+Il materiale evidenzia:
 
-- partner di fusione numerosi o sconosciuti
-- bassa espressione genica
-- espressione proteica non specifica per fusione
+- partner di fusione numerosi
+- partner sconosciuti
+- bassa espressione, per esempio ALK
+- espressione proteica non specifica, per esempio ROS1
 - splice site criptici
 - bassa diversità di sequenza ai breakpoint
 - difficoltà di mapping
-- campioni di qualità o quantità limitata
-- bassa cellularità tumorale
+- campioni poveri, limitati o a bassa cellularità tumorale
 
 ---
 
-## Anchored Multiplex PCR
+## Ruolo dell'AMP
 
-Nel materiale originale, l'AMP è presentato come approccio capace di affrontare diverse criticità della diagnostica delle fusioni.
+L'Anchored Multiplex PCR viene presentata come tecnologia utile per affrontare molte criticità della diagnostica delle fusioni.
 
-SplitFusion può essere utilizzato con:
+### Nel contesto SplitFusion
 
-- **RNA-seq**
-- **Anchored Multiplex PCR**
+SplitFusion può essere usato per:
+
+- RNA-seq
+- Anchored Multiplex PCR data
 
 ---
 
-## SplitFusion — principio
+## SplitFusion — principio computazionale
 
 SplitFusion sfrutta:
 
 # chimeric split-read alignments di BWA-MEM
 
-Il metodo è descritto come indipendente dai soli trascritti codificanti noti.
+Caratteristiche riportate:
+
+- agnostico rispetto ai soli trascritti codificanti noti
+- computazionalmente efficiente
+- orientato al reporting clinico
 
 ---
 
-## SplitFusion — workflow
+## Perché gli split reads sono importanti
 
-1. Reference alignment e deduplication
-2. CIGAR transformation
-3. Candidate breakpoint calling
-4. Initial breakpoint filtering
-5. Breakpoint gene annotation
-6. Frame-ness
-7. Exon-boundary analysis
-8. Further filtering / target reporting
-9. Result reporting and visualization
+Uno split read può attraversare un breakpoint.
 
----
+In una fusione, l'evidenza analitica deve interrogare:
 
-## Cosa aggiunge al reporting
-
-Il materiale indica capacità di:
-
-- inferire il **frame-ness**
-- valutare **exon-boundary alignments**
-- calcolare il numero di **unique DNA/RNA fragment ligation sites**
-- utilizzare modalità target per affinare il reporting
+- posizione del breakpoint
+- qualità dell'allineamento
+- coerenza delle letture
+- possibili mapping artefactuali
+- supporto indipendente
 
 ---
 
-## Dependencies
+## Workflow SplitFusion
 
-Nel materiale sono indicate dipendenze e risorse come:
+Il workflow descritto comprende:
+
+1. reference alignment
+2. deduplication
+3. CIGAR transformation
+4. candidate breakpoint calling
+5. initial breakpoint filtering
+6. breakpoint gene annotation
+7. frame-ness
+8. exon-boundary analysis
+9. further filtering
+10. target reporting
+11. visualization
+
+---
+
+## Reference alignment e deduplication
+
+### Obiettivo
+
+Produrre allineamenti utilizzabili per cercare evidenza chimerica.
+
+### Audit
+
+- la reference è corretta?
+- i reads sono deduplicati?
+- l'allineamento supporta il breakpoint?
+- la qualità di mapping è sufficiente?
+
+---
+
+## CIGAR transformation
+
+La trasformazione del CIGAR serve a rendere interpretabili gli eventi di allineamento utili al breakpoint calling.
+
+### Da verificare
+
+- soft clipping
+- split alignment
+- porzioni mappate su regioni diverse
+- coerenza dell'evento chimerico
+
+---
+
+## Candidate breakpoint calling
+
+Il software produce candidati.
+
+### Il candidato non è ancora un risultato clinico
+
+Serve filtrare e contestualizzare.
+
+---
+
+## Initial breakpoint filtering
+
+Il filtering iniziale serve a ridurre:
+
+- falsi positivi
+- mapping ambigui
+- eventi tecnici
+- breakpoint con supporto insufficiente
+
+---
+
+## Gene annotation
+
+Dopo il breakpoint calling, il metodo annota i geni coinvolti.
+
+### Attenzione
+
+Il nome GeneA–GeneB non basta.
+
+Serve sapere:
+
+- breakpoint
+- esoni coinvolti
+- trascritto
+- frame
+- supporto analitico
+
+---
+
+## Frame-ness
+
+SplitFusion viene descritto come capace di inferire il frame-ness del trascritto di fusione.
+
+### Domanda MTB
+
+La fusione è:
+
+- in-frame?
+- out-of-frame?
+- coerente con un meccanismo oncogenico?
+- supportata da evidenza sufficiente?
+
+---
+
+## Exon-boundary alignments
+
+Il materiale richiama la capacità di valutare gli allineamenti a confine esonico.
+
+### Perché conta
+
+Per interpretare:
+
+- plausibilità trascrizionale
+- coerenza con il gene model
+- possibili artefatti
+- reportabilità
+
+---
+
+## Unique DNA/RNA fragment ligation sites
+
+Il materiale indica anche il calcolo del numero di siti di ligazione/frammenti unici DNA/RNA.
+
+### Audit
+
+Supporto da molte letture duplicate ≠ supporto da frammenti indipendenti.
+
+---
+
+## SplitFusion-Target
+
+Il materiale descrive una modalità **SplitFusion-Target** per miglioramento continuo basato sull'evidenza nel reporting clinico.
+
+### Interpretazione didattica
+
+Utile per passare da:
+
+- ricerca ampia
+- a reporting mirato
+- con accumulo di evidenza strutturata
+
+---
+
+## Dependencies — risorse genomiche
+
+Nel materiale sono citati:
 
 - human genome reference
+- esempi di download hg19
+- organizzazione locale dei database
+
+### Messaggio pratico
+
+La pipeline dipende fortemente da reference e annotazioni coerenti.
+
+---
+
+## Dependencies — tool principali
+
+Il materiale include installazione/uso di:
+
 - samtools
-- altri tool necessari all'esecuzione
-
-L'obiettivo della lezione originale è fornire una guida pratica all'installazione e uso.
-
----
-
-## Audit di una fusione
-
-Quando si valuta una fusione, separare:
-
-### evidenza analitica
-
-da
-
-### interpretazione biologica
-
-da
-
-### rilevanza clinica
+- BWA
+- bedtools
+- perl
+- R
+- Python
 
 ---
 
-## Domanda per la masterclass
+## Annotation tools
 
-# Una fusione chiamata dal software è automaticamente reportabile?
+SplitFusion usa di default:
 
-::: fragment
-**No.**
-:::
+# snpEff
 
-::: fragment
-Il software produce un candidato; la sua interpretazione richiede qualità, contesto e classificazione.
-:::
+e supporta anche:
+
+# ANNOVAR
+
+### Implicazione
+
+La scelta dell'annotatore può influenzare interpretazione e report.
 
 ---
 
-## Framework + SplitFusion
+## Esempi di setup
 
-```text
-Fusion candidate
-    ↓
-analytical evidence
-    ↓
-quality / context
-    ↓
-AMP/ASCO/CAP tier
-    ↓
-ESCAT actionability
-    ↓
-trade-off
-    ↓
-documentation
+Il materiale mostra esempi pratici come:
+
+```bash
+git clone https://github.com/lh3/bwa.git
+cd bwa
+make
+```
+
+e installazione di pacchetti R:
+
+```r
+install.packages(c("Rcpp", "data.table", "plyr"))
 ```
 
 ---
 
-## Tre indicazioni finali
+## Installazione SplitFusion
 
-### 1
+Nel materiale viene indicato il clone del repository:
 
-# Detection ≠ interpretation
+```bash
+cd /home/user1/tools/
+git clone https://github.com/Zheng-NGS-Lab/SplitFusion.git
+```
 
-La chiamata bioinformatica non coincide con il significato clinico.
+### Per una masterclass
+
+Non serve installare tutto dal vivo.
+
+Serve capire cosa influenza il risultato.
+
+---
+
+# MODULO 3
+
+## Integrazione MTB
+
+---
+
+## Dal candidato di fusione al report
+
+```text
+Reads
+  ↓
+alignment
+  ↓
+split-read evidence
+  ↓
+candidate breakpoint
+  ↓
+filtering
+  ↓
+gene / exon / frame annotation
+  ↓
+clinical framework
+  ↓
+MTB discussion
+  ↓
+report
+```
+
+---
+
+## Audit fusion call
+
+Domande minime:
+
+- quanti split reads?
+- quanti frammenti indipendenti?
+- il breakpoint è coerente?
+- la fusione è in-frame?
+- ci sono ambiguità di mapping?
+- la fusione è compatibile con il tumore?
+- il tier e l'actionability sono chiari?
+
+---
+
+## Errore comune 1
+
+# Detection = interpretation
+
+No.
+
+Il software rileva un candidato, ma il MTB deve valutare evidenza, contesto e significato.
+
+---
+
+## Errore comune 2
+
+# Reproducibility = clinical validity
+
+No.
+
+Un workflow riproducibile è necessario, ma non sufficiente per la validità clinica.
+
+---
+
+## Errore comune 3
+
+# Tiering = decision
+
+No.
+
+Il tiering struttura l'evidenza.
+
+La decisione include trade-off, alternative, preferenze, contesto e documentazione.
 
 ---
 
 ## Tre indicazioni finali
 
-### 2
+### 1 — Evidence first
 
-# Tiering ≠ actionability
+Il livello analitico viene prima del livello clinico.
+
+---
+
+## Tre indicazioni finali
+
+### 2 — Keep frameworks separate
 
 AMP/ASCO/CAP ed ESCAT rispondono a domande diverse.
 
@@ -334,25 +628,21 @@ AMP/ASCO/CAP ed ESCAT rispondono a domande diverse.
 
 ## Tre indicazioni finali
 
-### 3
+### 3 — Document uncertainty
 
-# Documentare l'incertezza
-
-Aleatoric ed epistemic uncertainty vanno rese esplicite nel processo MTB.
+Dichiarare sempre cosa è certo, cosa è probabile e cosa resta ignoto.
 
 ---
 
 ## Materiali
 
-[Scarica i tre file originali](materiali.html)
+[Apri la pagina materiali](materiali.html)
 
-- indice/introduzione del corso
-- framework AMP/ASCO/CAP + ESCAT
-- SplitFusion
+[Scarica ZIP dei tre HTML originali](downloads/materiali-originali-fusion-2026.zip)
 
 ---
 
-## End
+## Fine
 
 # Molecular Tumor Board
 

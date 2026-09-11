@@ -1,206 +1,381 @@
 [
   {
-    "objectID": "index.html#molecular-tumor-board",
-    "href": "index.html#molecular-tumor-board",
-    "title": "Molecular Tumor Board",
-    "section": "Molecular Tumor Board",
-    "text": "Molecular Tumor Board"
+    "objectID": "index.html#fusion-2026",
+    "href": "index.html#fusion-2026",
+    "title": "Fusion 2026",
+    "section": "Fusion 2026",
+    "text": "Fusion 2026"
   },
   {
-    "objectID": "index.html#a-chi-è-rivolto",
-    "href": "index.html#a-chi-è-rivolto",
-    "title": "Molecular Tumor Board",
-    "section": "A chi è rivolto",
-    "text": "A chi è rivolto\nIl corso originale è pensato per:\n\nspecializzandi\nbiologi molecolari\nbioinformatici\nclinici interessati ai Molecular Tumor Board\n\nPrerequisiti indicati:\n\nbasi di NGS\nvarianti somatiche\nRNA-seq"
+    "objectID": "index.html#perché-questo-corso",
+    "href": "index.html#perché-questo-corso",
+    "title": "Fusion 2026",
+    "section": "Perché questo corso",
+    "text": "Perché questo corso\nIl materiale originale descrive un handbook interattivo per esercitarsi con:\n\nworkflow MTB\ninterpretazione dei risultati\ncomunicazione dei risultati\nuso di tabelle di varianti\nragionamento secondo AMP/ASCO/CAP ed ESCAT"
   },
   {
-    "objectID": "index.html#come-usare-il-corso",
-    "href": "index.html#come-usare-il-corso",
-    "title": "Molecular Tumor Board",
-    "section": "Come usare il corso",
-    "text": "Come usare il corso\nLa struttura originale dei capitoli segue:"
+    "objectID": "index.html#target-e-prerequisiti",
+    "href": "index.html#target-e-prerequisiti",
+    "title": "Fusion 2026",
+    "section": "Target e prerequisiti",
+    "text": "Target e prerequisiti\nTarget\n\nspecializzandi\nbiologi molecolari\nbioinformatici\nclinici interessati ai Molecular Tumor Board\n\nPrerequisiti minimi\n\nNGS di base\nvarianti somatiche\nRNA-seq"
+  },
+  {
+    "objectID": "index.html#struttura-didattica-originale",
+    "href": "index.html#struttura-didattica-originale",
+    "title": "Fusion 2026",
+    "section": "Struttura didattica originale",
+    "text": "Struttura didattica originale\nOgni capitolo segue:"
+  },
+  {
+    "objectID": "index.html#aree-del-corso-originale",
+    "href": "index.html#aree-del-corso-originale",
+    "title": "Fusion 2026",
+    "section": "Aree del corso originale",
+    "text": "Aree del corso originale\nIl corso originale includeva esempi su:\n\nGlioma / GBM IDH-wildtype\nOvaio / HGSOC\nMammella HR+/HER2−\nTNBC con BRCA1\nfusioni geniche da RNA-seq\n\n\nIn questo nuovo repository teniamo solo i materiali forniti: introduzione, framework e SplitFusion."
   },
   {
     "objectID": "index.html#framework-di-decisione",
     "href": "index.html#framework-di-decisione",
-    "title": "Molecular Tumor Board",
+    "title": "Fusion 2026",
     "section": "Framework di decisione",
     "text": "Framework di decisione"
   },
   {
     "objectID": "index.html#dal-risultato-ngs-alla-decisione-clinica",
     "href": "index.html#dal-risultato-ngs-alla-decisione-clinica",
-    "title": "Molecular Tumor Board",
+    "title": "Fusion 2026",
     "section": "Dal risultato NGS alla decisione clinica",
-    "text": "Dal risultato NGS alla decisione clinica\nIl framework propone cinque passaggi:\n\nQualità e contesto del dato\nTiering AMP/ASCO/CAP\nActionability clinica ESCAT\nTrade-off\nDocumentazione"
+    "text": "Dal risultato NGS alla decisione clinica\nIl framework pragmatico separa:\n\nqualità e contesto del dato\ntiering AMP/ASCO/CAP\nactionability clinica ESCAT\ntrade-off\ndocumentazione"
   },
   {
     "objectID": "index.html#qualità-e-contesto-del-dato",
     "href": "index.html#qualità-e-contesto-del-dato",
-    "title": "Molecular Tumor Board",
-    "section": "1. Qualità e contesto del dato",
-    "text": "1. Qualità e contesto del dato\nPrima dell’interpretazione:\n\ncopertura\npurezza\ncoerenza istologica\nmetodo\ntumor-only vs matched"
+    "title": "Fusion 2026",
+    "section": "Qualità e contesto del dato",
+    "text": "Qualità e contesto del dato\nPrima di discutere il significato clinico:\n\ncopertura\npurezza\ncoerenza istologica\nmetodo utilizzato\ntumor-only vs matched"
+  },
+  {
+    "objectID": "index.html#tumor-only-vs-matched",
+    "href": "index.html#tumor-only-vs-matched",
+    "title": "Fusion 2026",
+    "section": "Tumor-only vs matched",
+    "text": "Tumor-only vs matched\nTumor-only\nRichiede particolare attenzione a:\n\norigine germinale/somatica\ncontaminazione normale\ncopy number\nVAF\nincertezza residua\n\nMatched tumor-normal\nAiuta a separare varianti somatiche e germinali."
   },
   {
     "objectID": "index.html#tiering-ampascocap",
     "href": "index.html#tiering-ampascocap",
-    "title": "Molecular Tumor Board",
-    "section": "2. Tiering AMP/ASCO/CAP",
-    "text": "2. Tiering AMP/ASCO/CAP\nIl materiale originale applica il tiering a:\n\nvarianti\namplificazioni\nfusioni\n\ncon classificazione:"
+    "title": "Fusion 2026",
+    "section": "Tiering AMP/ASCO/CAP",
+    "text": "Tiering AMP/ASCO/CAP\nIl materiale usa il tiering per:\n\nvarianti\namplificazioni\nfusioni\n\nClassificazione:"
   },
   {
-    "objectID": "index.html#actionability-escat",
-    "href": "index.html#actionability-escat",
-    "title": "Molecular Tumor Board",
-    "section": "3. Actionability — ESCAT",
-    "text": "3. Actionability — ESCAT\nIl materiale distingue il tiering della variante dalla:"
+    "objectID": "index.html#escat",
+    "href": "index.html#escat",
+    "title": "Fusion 2026",
+    "section": "ESCAT",
+    "text": "ESCAT\nL’actionability clinica viene letta con livelli ESCAT.\nDomanda centrale\nQuanto è forte l’evidenza che collega:"
+  },
+  {
+    "objectID": "index.html#tiering-actionability",
+    "href": "index.html#tiering-actionability",
+    "title": "Fusion 2026",
+    "section": "Tiering ≠ actionability",
+    "text": "Tiering ≠ actionability\nUna variante può essere:\n\nbiologicamente rilevante\ntecnicamente vera\nclassificabile\nma non immediatamente actionable in quel setting"
   },
   {
     "objectID": "index.html#trade-off-clinico",
     "href": "index.html#trade-off-clinico",
-    "title": "Molecular Tumor Board",
-    "section": "4. Trade-off clinico",
-    "text": "4. Trade-off clinico\nLa decisione finale considera:\n\nbeneficio atteso\ntossicità\nlogistica\npreferenze del paziente\n\nIl risultato genomico non è la decisione clinica"
+    "title": "Fusion 2026",
+    "section": "Trade-off clinico",
+    "text": "Trade-off clinico\nIl framework include:\n\nbeneficio atteso\ntossicità\nlogistica\npreferenze del paziente\n\nMessaggio\nLa decisione MTB non è una semplice conversione automatica da variante a terapia."
   },
   {
     "objectID": "index.html#documentazione",
     "href": "index.html#documentazione",
-    "title": "Molecular Tumor Board",
-    "section": "5. Documentazione",
-    "text": "5. Documentazione\nIl framework prevede di documentare:\n\nraccomandazione primaria\nalternative\ntrial\nfollow-up"
+    "title": "Fusion 2026",
+    "section": "Documentazione",
+    "text": "Documentazione\nNel processo MTB vanno documentati:\n\nraccomandazione primaria\nalternative\ntrial clinici\nfollow-up\n\nObiettivo\nRendere tracciabile il ragionamento."
   },
   {
-    "objectID": "index.html#aleatoric-vs-epistemic",
-    "href": "index.html#aleatoric-vs-epistemic",
-    "title": "Molecular Tumor Board",
-    "section": "Aleatoric vs Epistemic",
-    "text": "Aleatoric vs Epistemic\nAleatoric uncertainty\nIncertezza intrinseca.\nEpistemic uncertainty\nIncertezza dovuta a:\n\nlimiti del modello\nlimiti del dato\nesempio: tumor-only"
+    "objectID": "index.html#aleatoric-vs-epistemic-uncertainty",
+    "href": "index.html#aleatoric-vs-epistemic-uncertainty",
+    "title": "Fusion 2026",
+    "section": "Aleatoric vs epistemic uncertainty",
+    "text": "Aleatoric vs epistemic uncertainty\nAleatoric\nIncertezza intrinseca al dato o al fenomeno osservato.\nEpistemic\nIncertezza dovuta a:\n\nlimiti del modello\nlimiti del dato\nincompletezza conoscitiva\nesempio: tumor-only"
   },
   {
-    "objectID": "index.html#checkpoint-mtb",
-    "href": "index.html#checkpoint-mtb",
-    "title": "Molecular Tumor Board",
-    "section": "Checkpoint MTB",
-    "text": "Checkpoint MTB\nPrima di discutere actionability:\n\nil dato è tecnicamente affidabile?\nil contesto è coerente?\nil tier è appropriato?\nil livello ESCAT è chiaro?\nl’incertezza è dichiarata?"
+    "objectID": "index.html#checklist-mtb",
+    "href": "index.html#checklist-mtb",
+    "title": "Fusion 2026",
+    "section": "Checklist MTB",
+    "text": "Checklist MTB\nPrima di formulare una raccomandazione:\n\nil dato è tecnicamente interpretabile?\nil contesto istologico è coerente?\nil tier AMP/ASCO/CAP è definito?\nil livello ESCAT è pertinente?\ntrade-off e alternative sono dichiarati?\nl’incertezza è documentata?"
   },
   {
     "objectID": "index.html#splitfusion",
     "href": "index.html#splitfusion",
-    "title": "Molecular Tumor Board",
+    "title": "Fusion 2026",
     "section": "SplitFusion",
     "text": "SplitFusion"
   },
   {
-    "objectID": "index.html#perché-le-fusioni-contano",
-    "href": "index.html#perché-le-fusioni-contano",
-    "title": "Molecular Tumor Board",
-    "section": "Perché le fusioni contano",
-    "text": "Perché le fusioni contano\nNel materiale originale, le fusioni geniche sono presentate come importanti in oncologia di precisione.\nEsempi citati:\n\nBCR-ABL\nEML4-ALK\n\nL’accurata rilevazione delle fusioni è quindi parte del matching molecolare."
+    "objectID": "index.html#perché-parlare-di-fusioni",
+    "href": "index.html#perché-parlare-di-fusioni",
+    "title": "Fusion 2026",
+    "section": "Perché parlare di fusioni",
+    "text": "Perché parlare di fusioni\nLe fusioni geniche sono rilevanti in oncologia.\nEsempi citati nel materiale:\n\nBCR-ABL nella leucemia mieloide cronica\nEML4-ALK nel carcinoma polmonare\n\nObiettivo clinico\nAbbinare il paziente al trattamento corretto quando l’evidenza è solida."
   },
   {
-    "objectID": "index.html#perché-le-fusioni-sono-difficili",
-    "href": "index.html#perché-le-fusioni-sono-difficili",
-    "title": "Molecular Tumor Board",
-    "section": "Perché le fusioni sono difficili",
-    "text": "Perché le fusioni sono difficili\nIl materiale evidenzia diverse criticità:\n\npartner di fusione numerosi o sconosciuti\nbassa espressione genica\nespressione proteica non specifica per fusione\nsplice site criptici\nbassa diversità di sequenza ai breakpoint\ndifficoltà di mapping\ncampioni di qualità o quantità limitata\nbassa cellularità tumorale"
+    "objectID": "index.html#difficoltà-diagnostiche-delle-fusioni",
+    "href": "index.html#difficoltà-diagnostiche-delle-fusioni",
+    "title": "Fusion 2026",
+    "section": "Difficoltà diagnostiche delle fusioni",
+    "text": "Difficoltà diagnostiche delle fusioni\nIl materiale evidenzia:\n\npartner di fusione numerosi\npartner sconosciuti\nbassa espressione, per esempio ALK\nespressione proteica non specifica, per esempio ROS1\nsplice site criptici\nbassa diversità di sequenza ai breakpoint\ndifficoltà di mapping\ncampioni poveri, limitati o a bassa cellularità tumorale"
   },
   {
-    "objectID": "index.html#anchored-multiplex-pcr",
-    "href": "index.html#anchored-multiplex-pcr",
-    "title": "Molecular Tumor Board",
-    "section": "Anchored Multiplex PCR",
-    "text": "Anchored Multiplex PCR\nNel materiale originale, l’AMP è presentato come approccio capace di affrontare diverse criticità della diagnostica delle fusioni.\nSplitFusion può essere utilizzato con:\n\nRNA-seq\nAnchored Multiplex PCR"
+    "objectID": "index.html#ruolo-dellamp",
+    "href": "index.html#ruolo-dellamp",
+    "title": "Fusion 2026",
+    "section": "Ruolo dell’AMP",
+    "text": "Ruolo dell’AMP\nL’Anchored Multiplex PCR viene presentata come tecnologia utile per affrontare molte criticità della diagnostica delle fusioni.\nNel contesto SplitFusion\nSplitFusion può essere usato per:\n\nRNA-seq\nAnchored Multiplex PCR data"
   },
   {
-    "objectID": "index.html#splitfusion-principio",
-    "href": "index.html#splitfusion-principio",
-    "title": "Molecular Tumor Board",
-    "section": "SplitFusion — principio",
-    "text": "SplitFusion — principio\nSplitFusion sfrutta:"
+    "objectID": "index.html#splitfusion-principio-computazionale",
+    "href": "index.html#splitfusion-principio-computazionale",
+    "title": "Fusion 2026",
+    "section": "SplitFusion — principio computazionale",
+    "text": "SplitFusion — principio computazionale\nSplitFusion sfrutta:"
   },
   {
-    "objectID": "index.html#splitfusion-workflow",
-    "href": "index.html#splitfusion-workflow",
-    "title": "Molecular Tumor Board",
-    "section": "SplitFusion — workflow",
-    "text": "SplitFusion — workflow\n\nReference alignment e deduplication\nCIGAR transformation\nCandidate breakpoint calling\nInitial breakpoint filtering\nBreakpoint gene annotation\nFrame-ness\nExon-boundary analysis\nFurther filtering / target reporting\nResult reporting and visualization"
+    "objectID": "index.html#perché-gli-split-reads-sono-importanti",
+    "href": "index.html#perché-gli-split-reads-sono-importanti",
+    "title": "Fusion 2026",
+    "section": "Perché gli split reads sono importanti",
+    "text": "Perché gli split reads sono importanti\nUno split read può attraversare un breakpoint.\nIn una fusione, l’evidenza analitica deve interrogare:\n\nposizione del breakpoint\nqualità dell’allineamento\ncoerenza delle letture\npossibili mapping artefactuali\nsupporto indipendente"
   },
   {
-    "objectID": "index.html#cosa-aggiunge-al-reporting",
-    "href": "index.html#cosa-aggiunge-al-reporting",
-    "title": "Molecular Tumor Board",
-    "section": "Cosa aggiunge al reporting",
-    "text": "Cosa aggiunge al reporting\nIl materiale indica capacità di:\n\ninferire il frame-ness\nvalutare exon-boundary alignments\ncalcolare il numero di unique DNA/RNA fragment ligation sites\nutilizzare modalità target per affinare il reporting"
+    "objectID": "index.html#workflow-splitfusion",
+    "href": "index.html#workflow-splitfusion",
+    "title": "Fusion 2026",
+    "section": "Workflow SplitFusion",
+    "text": "Workflow SplitFusion\nIl workflow descritto comprende:\n\nreference alignment\ndeduplication\nCIGAR transformation\ncandidate breakpoint calling\ninitial breakpoint filtering\nbreakpoint gene annotation\nframe-ness\nexon-boundary analysis\nfurther filtering\ntarget reporting\nvisualization"
   },
   {
-    "objectID": "index.html#dependencies",
-    "href": "index.html#dependencies",
-    "title": "Molecular Tumor Board",
-    "section": "Dependencies",
-    "text": "Dependencies\nNel materiale sono indicate dipendenze e risorse come:\n\nhuman genome reference\nsamtools\naltri tool necessari all’esecuzione\n\nL’obiettivo della lezione originale è fornire una guida pratica all’installazione e uso."
+    "objectID": "index.html#reference-alignment-e-deduplication",
+    "href": "index.html#reference-alignment-e-deduplication",
+    "title": "Fusion 2026",
+    "section": "Reference alignment e deduplication",
+    "text": "Reference alignment e deduplication\nObiettivo\nProdurre allineamenti utilizzabili per cercare evidenza chimerica.\nAudit\n\nla reference è corretta?\ni reads sono deduplicati?\nl’allineamento supporta il breakpoint?\nla qualità di mapping è sufficiente?"
   },
   {
-    "objectID": "index.html#audit-di-una-fusione",
-    "href": "index.html#audit-di-una-fusione",
-    "title": "Molecular Tumor Board",
-    "section": "Audit di una fusione",
-    "text": "Audit di una fusione\nQuando si valuta una fusione, separare:\nevidenza analitica\nda\ninterpretazione biologica\nda\nrilevanza clinica"
+    "objectID": "index.html#cigar-transformation",
+    "href": "index.html#cigar-transformation",
+    "title": "Fusion 2026",
+    "section": "CIGAR transformation",
+    "text": "CIGAR transformation\nLa trasformazione del CIGAR serve a rendere interpretabili gli eventi di allineamento utili al breakpoint calling.\nDa verificare\n\nsoft clipping\nsplit alignment\nporzioni mappate su regioni diverse\ncoerenza dell’evento chimerico"
   },
   {
-    "objectID": "index.html#domanda-per-la-masterclass",
-    "href": "index.html#domanda-per-la-masterclass",
-    "title": "Molecular Tumor Board",
-    "section": "Domanda per la masterclass",
-    "text": "Domanda per la masterclass"
+    "objectID": "index.html#candidate-breakpoint-calling",
+    "href": "index.html#candidate-breakpoint-calling",
+    "title": "Fusion 2026",
+    "section": "Candidate breakpoint calling",
+    "text": "Candidate breakpoint calling\nIl software produce candidati.\nIl candidato non è ancora un risultato clinico\nServe filtrare e contestualizzare."
   },
   {
-    "objectID": "index.html#framework-splitfusion",
-    "href": "index.html#framework-splitfusion",
-    "title": "Molecular Tumor Board",
-    "section": "Framework + SplitFusion",
-    "text": "Framework + SplitFusion\nFusion candidate\n    ↓\nanalytical evidence\n    ↓\nquality / context\n    ↓\nAMP/ASCO/CAP tier\n    ↓\nESCAT actionability\n    ↓\ntrade-off\n    ↓\ndocumentation"
+    "objectID": "index.html#initial-breakpoint-filtering",
+    "href": "index.html#initial-breakpoint-filtering",
+    "title": "Fusion 2026",
+    "section": "Initial breakpoint filtering",
+    "text": "Initial breakpoint filtering\nIl filtering iniziale serve a ridurre:\n\nfalsi positivi\nmapping ambigui\neventi tecnici\nbreakpoint con supporto insufficiente"
+  },
+  {
+    "objectID": "index.html#gene-annotation",
+    "href": "index.html#gene-annotation",
+    "title": "Fusion 2026",
+    "section": "Gene annotation",
+    "text": "Gene annotation\nDopo il breakpoint calling, il metodo annota i geni coinvolti.\nAttenzione\nIl nome GeneA–GeneB non basta.\nServe sapere:\n\nbreakpoint\nesoni coinvolti\ntrascritto\nframe\nsupporto analitico"
+  },
+  {
+    "objectID": "index.html#frame-ness",
+    "href": "index.html#frame-ness",
+    "title": "Fusion 2026",
+    "section": "Frame-ness",
+    "text": "Frame-ness\nSplitFusion viene descritto come capace di inferire il frame-ness del trascritto di fusione.\nDomanda MTB\nLa fusione è:\n\nin-frame?\nout-of-frame?\ncoerente con un meccanismo oncogenico?\nsupportata da evidenza sufficiente?"
+  },
+  {
+    "objectID": "index.html#exon-boundary-alignments",
+    "href": "index.html#exon-boundary-alignments",
+    "title": "Fusion 2026",
+    "section": "Exon-boundary alignments",
+    "text": "Exon-boundary alignments\nIl materiale richiama la capacità di valutare gli allineamenti a confine esonico.\nPerché conta\nPer interpretare:\n\nplausibilità trascrizionale\ncoerenza con il gene model\npossibili artefatti\nreportabilità"
+  },
+  {
+    "objectID": "index.html#unique-dnarna-fragment-ligation-sites",
+    "href": "index.html#unique-dnarna-fragment-ligation-sites",
+    "title": "Fusion 2026",
+    "section": "Unique DNA/RNA fragment ligation sites",
+    "text": "Unique DNA/RNA fragment ligation sites\nIl materiale indica anche il calcolo del numero di siti di ligazione/frammenti unici DNA/RNA.\nAudit\nSupporto da molte letture duplicate ≠ supporto da frammenti indipendenti."
+  },
+  {
+    "objectID": "index.html#splitfusion-target",
+    "href": "index.html#splitfusion-target",
+    "title": "Fusion 2026",
+    "section": "SplitFusion-Target",
+    "text": "SplitFusion-Target\nIl materiale descrive una modalità SplitFusion-Target per miglioramento continuo basato sull’evidenza nel reporting clinico.\nInterpretazione didattica\nUtile per passare da:\n\nricerca ampia\na reporting mirato\ncon accumulo di evidenza strutturata"
+  },
+  {
+    "objectID": "index.html#dependencies-risorse-genomiche",
+    "href": "index.html#dependencies-risorse-genomiche",
+    "title": "Fusion 2026",
+    "section": "Dependencies — risorse genomiche",
+    "text": "Dependencies — risorse genomiche\nNel materiale sono citati:\n\nhuman genome reference\nesempi di download hg19\norganizzazione locale dei database\n\nMessaggio pratico\nLa pipeline dipende fortemente da reference e annotazioni coerenti."
+  },
+  {
+    "objectID": "index.html#dependencies-tool-principali",
+    "href": "index.html#dependencies-tool-principali",
+    "title": "Fusion 2026",
+    "section": "Dependencies — tool principali",
+    "text": "Dependencies — tool principali\nIl materiale include installazione/uso di:\n\nsamtools\nBWA\nbedtools\nperl\nR\nPython"
+  },
+  {
+    "objectID": "index.html#annotation-tools",
+    "href": "index.html#annotation-tools",
+    "title": "Fusion 2026",
+    "section": "Annotation tools",
+    "text": "Annotation tools\nSplitFusion usa di default:"
+  },
+  {
+    "objectID": "index.html#esempi-di-setup",
+    "href": "index.html#esempi-di-setup",
+    "title": "Fusion 2026",
+    "section": "Esempi di setup",
+    "text": "Esempi di setup\nIl materiale mostra esempi pratici come:\ngit clone https://github.com/lh3/bwa.git\ncd bwa\nmake\ne installazione di pacchetti R:\ninstall.packages(c(\"Rcpp\", \"data.table\", \"plyr\"))"
+  },
+  {
+    "objectID": "index.html#installazione-splitfusion",
+    "href": "index.html#installazione-splitfusion",
+    "title": "Fusion 2026",
+    "section": "Installazione SplitFusion",
+    "text": "Installazione SplitFusion\nNel materiale viene indicato il clone del repository:\ncd /home/user1/tools/\ngit clone https://github.com/Zheng-NGS-Lab/SplitFusion.git\nPer una masterclass\nNon serve installare tutto dal vivo.\nServe capire cosa influenza il risultato."
+  },
+  {
+    "objectID": "index.html#integrazione-mtb",
+    "href": "index.html#integrazione-mtb",
+    "title": "Fusion 2026",
+    "section": "Integrazione MTB",
+    "text": "Integrazione MTB"
+  },
+  {
+    "objectID": "index.html#dal-candidato-di-fusione-al-report",
+    "href": "index.html#dal-candidato-di-fusione-al-report",
+    "title": "Fusion 2026",
+    "section": "Dal candidato di fusione al report",
+    "text": "Dal candidato di fusione al report\nReads\n  ↓\nalignment\n  ↓\nsplit-read evidence\n  ↓\ncandidate breakpoint\n  ↓\nfiltering\n  ↓\ngene / exon / frame annotation\n  ↓\nclinical framework\n  ↓\nMTB discussion\n  ↓\nreport"
+  },
+  {
+    "objectID": "index.html#audit-fusion-call",
+    "href": "index.html#audit-fusion-call",
+    "title": "Fusion 2026",
+    "section": "Audit fusion call",
+    "text": "Audit fusion call\nDomande minime:\n\nquanti split reads?\nquanti frammenti indipendenti?\nil breakpoint è coerente?\nla fusione è in-frame?\nci sono ambiguità di mapping?\nla fusione è compatibile con il tumore?\nil tier e l’actionability sono chiari?"
+  },
+  {
+    "objectID": "index.html#errore-comune-1",
+    "href": "index.html#errore-comune-1",
+    "title": "Fusion 2026",
+    "section": "Errore comune 1",
+    "text": "Errore comune 1"
+  },
+  {
+    "objectID": "index.html#errore-comune-2",
+    "href": "index.html#errore-comune-2",
+    "title": "Fusion 2026",
+    "section": "Errore comune 2",
+    "text": "Errore comune 2"
+  },
+  {
+    "objectID": "index.html#errore-comune-3",
+    "href": "index.html#errore-comune-3",
+    "title": "Fusion 2026",
+    "section": "Errore comune 3",
+    "text": "Errore comune 3"
   },
   {
     "objectID": "index.html#tre-indicazioni-finali",
     "href": "index.html#tre-indicazioni-finali",
-    "title": "Molecular Tumor Board",
+    "title": "Fusion 2026",
     "section": "Tre indicazioni finali",
-    "text": "Tre indicazioni finali\n1"
+    "text": "Tre indicazioni finali\n1 — Evidence first\nIl livello analitico viene prima del livello clinico."
   },
   {
     "objectID": "index.html#tre-indicazioni-finali-1",
     "href": "index.html#tre-indicazioni-finali-1",
-    "title": "Molecular Tumor Board",
+    "title": "Fusion 2026",
     "section": "Tre indicazioni finali",
-    "text": "Tre indicazioni finali\n2"
+    "text": "Tre indicazioni finali\n2 — Keep frameworks separate\nAMP/ASCO/CAP ed ESCAT rispondono a domande diverse."
   },
   {
     "objectID": "index.html#tre-indicazioni-finali-2",
     "href": "index.html#tre-indicazioni-finali-2",
-    "title": "Molecular Tumor Board",
+    "title": "Fusion 2026",
     "section": "Tre indicazioni finali",
-    "text": "Tre indicazioni finali\n3"
+    "text": "Tre indicazioni finali\n3 — Document uncertainty\nDichiarare sempre cosa è certo, cosa è probabile e cosa resta ignoto."
   },
   {
     "objectID": "index.html#materiali",
     "href": "index.html#materiali",
-    "title": "Molecular Tumor Board",
+    "title": "Fusion 2026",
     "section": "Materiali",
-    "text": "Materiali\nScarica i tre file originali\n\nindice/introduzione del corso\nframework AMP/ASCO/CAP + ESCAT\nSplitFusion"
+    "text": "Materiali\nApri la pagina materiali\nScarica ZIP dei tre HTML originali"
   },
   {
-    "objectID": "index.html#end",
-    "href": "index.html#end",
-    "title": "Molecular Tumor Board",
-    "section": "End",
-    "text": "End"
+    "objectID": "index.html#fine",
+    "href": "index.html#fine",
+    "title": "Fusion 2026",
+    "section": "Fine",
+    "text": "Fine"
   },
   {
     "objectID": "materiali.html",
     "href": "materiali.html",
     "title": "Materiali scaricabili",
     "section": "",
-    "text": "File originali\n\nIndex / Molecular Tumor Board — Simulation Handbook\nFramework AMP/ASCO/CAP + ESCAT\nSplitFusion — Introduzione e Guida Rapida\n\n\n\nPacchetto ZIP\n\nScarica tutti i file originali\n\n\n\n\n\n\n\nNote\n\n\n\nQuesta pagina contiene esclusivamente i tre materiali forniti per il nuovo repository."
+    "text": "⬇ Scarica ZIP con i tre HTML originali"
+  },
+  {
+    "objectID": "materiali.html#pacchetto-completo",
+    "href": "materiali.html#pacchetto-completo",
+    "title": "Materiali scaricabili",
+    "section": "",
+    "text": "⬇ Scarica ZIP con i tre HTML originali"
+  },
+  {
+    "objectID": "controllo.html",
+    "href": "controllo.html",
+    "title": "Controllo contenuti",
+    "section": "",
+    "text": "scopo del Molecular Tumor Board Simulation Handbook\nfocus su workflow, interpretazione e comunicazione\ntarget e prerequisiti\nstruttura didattica dei capitoli\naree del corso originale\n\n\n\n\n\nqualità e contesto del dato\ncopertura, purezza, istologia, metodo\ntumor-only vs matched\ntiering AMP/ASCO/CAP\nESCAT\ntrade-off\ndocumentazione\naleatoric vs epistemic uncertainty\n\n\n\n\n\nimportanza clinica delle fusioni\nesempi BCR-ABL ed EML4-ALK\ncriticità diagnostiche\nAMP\nsplit reads e BWA-MEM\nRNA-seq e AMP data\nworkflow SplitFusion completo\ndeduplication\nCIGAR transformation\nbreakpoint calling/filtering\ngene annotation\nframe-ness\nexon-boundary\nunique DNA/RNA fragment ligation sites\nSplitFusion-Target\ndependencies\nsnpEff / ANNOVAR\ncomandi di setup"
+  },
+  {
+    "objectID": "controllo.html#dal-file-index",
+    "href": "controllo.html#dal-file-index",
+    "title": "Controllo contenuti",
+    "section": "",
+    "text": "scopo del Molecular Tumor Board Simulation Handbook\nfocus su workflow, interpretazione e comunicazione\ntarget e prerequisiti\nstruttura didattica dei capitoli\naree del corso originale"
+  },
+  {
+    "objectID": "controllo.html#dal-file-framework",
+    "href": "controllo.html#dal-file-framework",
+    "title": "Controllo contenuti",
+    "section": "",
+    "text": "qualità e contesto del dato\ncopertura, purezza, istologia, metodo\ntumor-only vs matched\ntiering AMP/ASCO/CAP\nESCAT\ntrade-off\ndocumentazione\naleatoric vs epistemic uncertainty"
+  },
+  {
+    "objectID": "controllo.html#dal-file-splitfusion",
+    "href": "controllo.html#dal-file-splitfusion",
+    "title": "Controllo contenuti",
+    "section": "",
+    "text": "importanza clinica delle fusioni\nesempi BCR-ABL ed EML4-ALK\ncriticità diagnostiche\nAMP\nsplit reads e BWA-MEM\nRNA-seq e AMP data\nworkflow SplitFusion completo\ndeduplication\nCIGAR transformation\nbreakpoint calling/filtering\ngene annotation\nframe-ness\nexon-boundary\nunique DNA/RNA fragment ligation sites\nSplitFusion-Target\ndependencies\nsnpEff / ANNOVAR\ncomandi di setup"
   },
   {
     "objectID": "fonti.html",

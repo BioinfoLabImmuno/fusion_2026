@@ -1,0 +1,45 @@
+---
+title: "Controllo contenuti"
+---
+
+# Cosa è incluso nella presentazione
+
+## Dal file index
+
+- scopo del Molecular Tumor Board Simulation Handbook
+- focus su workflow, interpretazione e comunicazione
+- target e prerequisiti
+- struttura didattica dei capitoli
+- aree del corso originale
+
+## Dal file framework
+
+- qualità e contesto del dato
+- copertura, purezza, istologia, metodo
+- tumor-only vs matched
+- tiering AMP/ASCO/CAP
+- ESCAT
+- trade-off
+- documentazione
+- aleatoric vs epistemic uncertainty
+
+## Dal file SplitFusion
+
+- importanza clinica delle fusioni
+- esempi BCR-ABL ed EML4-ALK
+- criticità diagnostiche
+- AMP
+- split reads e BWA-MEM
+- RNA-seq e AMP data
+- workflow SplitFusion completo
+- deduplication
+- CIGAR transformation
+- breakpoint calling/filtering
+- gene annotation
+- frame-ness
+- exon-boundary
+- unique DNA/RNA fragment ligation sites
+- SplitFusion-Target
+- dependencies
+- snpEff / ANNOVAR
+- comandi di setup

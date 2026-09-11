@@ -2,16 +2,20 @@
 title: "Materiali scaricabili"
 ---
 
+# Download
+
+## Pacchetto completo
+
+[⬇ Scarica ZIP con i tre HTML originali](downloads/materiali-originali-fusion-2026.zip)
+
 # File originali
 
-- [Index / Molecular Tumor Board — Simulation Handbook](originali/index_originale.html)
-- [Framework AMP/ASCO/CAP + ESCAT](originali/02_framework_originale.html)
-- [SplitFusion — Introduzione e Guida Rapida](originali/08_SplitFusion_originale.html)
-
-# Pacchetto ZIP
-
-- [Scarica tutti i file originali](downloads/materiali-originali.zip)
+| File | Link |
+|---|---|
+| Index / Molecular Tumor Board Handbook | [index_originale.html](originali/index_originale.html) |
+| Framework AMP/ASCO/CAP + ESCAT | [02_framework_originale.html](originali/02_framework_originale.html) |
+| SplitFusion | [08_SplitFusion_originale.html](originali/08_SplitFusion_originale.html) |
 
 ::: {.callout-note}
-Questa pagina contiene esclusivamente i tre materiali forniti per il nuovo repository.
+Questa pagina contiene solo i tre materiali forniti per il repository Fusion 2026.
 :::

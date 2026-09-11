@@ -7,15 +7,15 @@ project:
     - styles.css
 
 website:
-  title: "MTB Decision Framework & SplitFusion"
+  title: "Fusion 2026"
   navbar:
     left:
       - href: index.qmd
         text: Presentazione
       - href: materiali.qmd
         text: Materiali
-      - href: fonti.qmd
-        text: Fonti
+      - href: controllo.qmd
+        text: Controllo contenuti
 
 format:
   html:
