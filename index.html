@@ -203,7 +203,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Fusion 2026</h1>
-  <p class="subtitle">Molecular Tumor Board · Framework decisionale · SplitFusion</p>
+  <p class="subtitle">Molecular Tumor Board · Framework decisionale · SplitFusion · MTBP</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -214,879 +214,700 @@ Masterclass per biologi clinici e bioinformatici
 </div>
 
 </section>
-<section id="fusion-2026" class="slide level2">
+<section id="fusion-2026" class="slide level2 inverse center">
 <h2>Fusion 2026</h2>
 </section>
 <section>
-<section id="molecular-tumor-board" class="title-slide slide level1 center">
-<h1>Molecular Tumor Board</h1>
+<section id="dal-dato-molecolare-alla-decisione-mtb" class="title-slide slide level1 center">
+<h1>Dal dato molecolare alla decisione MTB</h1>
 
 </section>
-<h3 id="framework-decisionale-splitfusion">Framework decisionale + SplitFusion</h3>
+<h3 id="framework-decisionale-splitfusion-mtbp">Framework decisionale · SplitFusion · MTBP</h3>
 <div class="small">
-<p>Nuovo repository costruito solo dai tre file forniti: index, framework e SplitFusion.</p>
+<p>Mini-masterclass Quarto RevealJS per biologi clinici e bioinformatici.</p>
 </div>
-<section id="perché-questo-corso" class="slide level2">
-<h2>Perché questo corso</h2>
-<p>Il materiale originale descrive un handbook interattivo per esercitarsi con:</p>
+<section id="perché-questa-masterclass" class="slide level2">
+<h2>Perché questa masterclass</h2>
+<h3 id="problema">Problema</h3>
+<p>Una chiamata molecolare non è ancora una raccomandazione clinica.</p>
+<h3 id="obiettivo">Obiettivo</h3>
+<p>Costruire un percorso verificabile:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a aria-label="1"></a>dato grezzo → evidenza analitica → interpretazione → actionability → report</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="takehome">
+<p>Il Molecular Tumor Board deve separare evidenza, inferenza e decisione.</p>
+</div>
+</section>
+<section id="cosa-imparerai" class="slide level2">
+<h2>Cosa imparerai</h2>
+<p>Al termine del percorso saprai distinguere:</p>
 <ul>
-<li>workflow MTB</li>
-<li>interpretazione dei risultati</li>
-<li>comunicazione dei risultati</li>
-<li>uso di tabelle di varianti</li>
-<li>ragionamento secondo AMP/ASCO/CAP ed ESCAT</li>
+<li>qualità del dato</li>
+<li>interpretazione funzionale</li>
+<li>contesto tumorale</li>
+<li>tiering AMP/ASCO/CAP</li>
+<li>actionability ESCAT</li>
+<li>evidenza di fusione</li>
+<li>supporto decisionale MTBP</li>
+<li>limiti dell’AI nella sintesi clinica</li>
 </ul>
 </section>
-<section id="target-e-prerequisiti" class="slide level2">
-<h2>Target e prerequisiti</h2>
-<h3 id="target">Target</h3>
-<ul>
-<li>specializzandi</li>
-<li>biologi molecolari</li>
-<li>bioinformatici</li>
-<li>clinici interessati ai Molecular Tumor Board</li>
-</ul>
-<h3 id="prerequisiti-minimi">Prerequisiti minimi</h3>
-<ul>
-<li>NGS di base</li>
-<li>varianti somatiche</li>
-<li>RNA-seq</li>
-</ul>
+<section id="mappa-del-corso" class="slide level2">
+<h2>Mappa del corso</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a aria-label="1"></a>NGS / RNA-seq data</span>
+<span id="cb2-2"><a aria-label="2"></a>      ↓</span>
+<span id="cb2-3"><a aria-label="3"></a>qualità del dato</span>
+<span id="cb2-4"><a aria-label="4"></a>      ↓</span>
+<span id="cb2-5"><a aria-label="5"></a>variant / fusion interpretation</span>
+<span id="cb2-6"><a aria-label="6"></a>      ↓</span>
+<span id="cb2-7"><a aria-label="7"></a>functional relevance</span>
+<span id="cb2-8"><a aria-label="8"></a>      ↓</span>
+<span id="cb2-9"><a aria-label="9"></a>tumor context</span>
+<span id="cb2-10"><a aria-label="10"></a>      ↓</span>
+<span id="cb2-11"><a aria-label="11"></a>AMP/ASCO/CAP + ESCAT</span>
+<span id="cb2-12"><a aria-label="12"></a>      ↓</span>
+<span id="cb2-13"><a aria-label="13"></a>MTB recommendation</span>
+<span id="cb2-14"><a aria-label="14"></a>      ↓</span>
+<span id="cb2-15"><a aria-label="15"></a>report strutturato</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="struttura-didattica-originale" class="slide level2">
-<h2>Struttura didattica originale</h2>
-<p>Ogni capitolo segue:</p>
-</section></section>
-<section>
-<section id="obiettivi-datimetodi-analisi-outputreport-riferimenti" class="title-slide slide level1 center">
-<h1>Obiettivi → Dati/Metodi → Analisi → Output/Report → Riferimenti</h1>
-<p>Con:</p>
-<ul>
-<li>suggerimenti pratici</li>
-<li>pitfall comuni</li>
-<li>checklist operative</li>
-</ul>
+<section id="come-seguire-le-slide" class="slide level2">
+<h2>Come seguire le slide</h2>
+<p>Ogni modulo usa la stessa logica:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Fase</th>
+<th>Domanda</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Concetto</td>
+<td>Cosa sto valutando?</td>
+</tr>
+<tr class="even">
+<td>Pitfall</td>
+<td>Quale errore devo evitare?</td>
+</tr>
+<tr class="odd">
+<td>Checklist</td>
+<td>Quali controlli faccio?</td>
+</tr>
+<tr class="even">
+<td>Domanda MTB</td>
+<td>Cosa porto alla discussione?</td>
+</tr>
+<tr class="odd">
+<td>Take-home</td>
+<td>Cosa deve restare nel report?</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="aree-del-corso-originale" class="slide level2">
-<h2>Aree del corso originale</h2>
-<p>Il corso originale includeva esempi su:</p>
+<section id="materiali-e-controllo" class="slide level2">
+<h2>Materiali e controllo</h2>
 <ul>
-<li><strong>Glioma / GBM IDH-wildtype</strong></li>
-<li><strong>Ovaio / HGSOC</strong></li>
-<li><strong>Mammella HR+/HER2−</strong></li>
-<li><strong>TNBC con BRCA1</strong></li>
-<li><strong>fusioni geniche da RNA-seq</strong></li>
+<li><a href="materiali.html">Materiali scaricabili</a></li>
+<li><a href="controllo.html">Controllo contenuti</a></li>
 </ul>
 <div class="small">
-<p>In questo nuovo repository teniamo solo i materiali forniti: introduzione, framework e SplitFusion.</p>
+<p>I file originali restano disponibili come materiale didattico e di verifica.</p>
 </div>
 </section>
 <section class="slide level2">
 
 </section></section>
 <section>
-<section id="modulo-1" class="title-slide slide level1 center">
+<section id="modulo-1" class="title-slide slide level1 inverse center">
 <h1>MODULO 1</h1>
 
 </section>
-<section id="framework-di-decisione" class="slide level2">
-<h2>Framework di decisione</h2>
+<section id="framework-decisionale-mtb" class="slide level2">
+<h2>Framework decisionale MTB</h2>
 </section>
-<section id="dal-risultato-ngs-alla-decisione-clinica" class="slide level2">
-<h2>Dal risultato NGS alla decisione clinica</h2>
-<p>Il framework pragmatico separa:</p>
-<ol type="1">
-<li>qualità e contesto del dato</li>
-<li>tiering AMP/ASCO/CAP</li>
-<li>actionability clinica ESCAT</li>
-<li>trade-off</li>
-<li>documentazione</li>
-</ol>
+<section id="dal-risultato-ngs-alla-decisione" class="slide level2">
+<h2>Dal risultato NGS alla decisione</h2>
+<p>Il framework separa cinque passaggi:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Livello</th>
+<th>Domanda</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Qualità</td>
+<td>Il dato è interpretabile?</td>
+</tr>
+<tr class="even">
+<td>Tiering</td>
+<td>Come classifico l’alterazione?</td>
+</tr>
+<tr class="odd">
+<td>Actionability</td>
+<td>È clinicamente rilevante nel setting?</td>
+</tr>
+<tr class="even">
+<td>Trade-off</td>
+<td>Cosa cambia per il paziente?</td>
+</tr>
+<tr class="odd">
+<td>Documentazione</td>
+<td>Il ragionamento è tracciabile?</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="qualità-e-contesto-del-dato" class="slide level2">
 <h2>Qualità e contesto del dato</h2>
-<p>Prima di discutere il significato clinico:</p>
+<p>Prima del significato clinico:</p>
 <ul>
 <li>copertura</li>
-<li>purezza</li>
+<li>purezza tumorale</li>
 <li>coerenza istologica</li>
-<li>metodo utilizzato</li>
+<li>metodo usato</li>
 <li>tumor-only vs matched</li>
+<li>limiti tecnici del test</li>
 </ul>
-</section></section>
-<section>
-<section id="il-dato-viene-prima-dellinterpretazione" class="title-slide slide level1 center">
-<h1>Il dato viene prima dell’interpretazione</h1>
-
+<div class="takehome">
+<p>Il dato viene prima dell’interpretazione.</p>
+</div>
 </section>
 <section id="tumor-only-vs-matched" class="slide level2">
 <h2>Tumor-only vs matched</h2>
 <h3 id="tumor-only">Tumor-only</h3>
-<p>Richiede particolare attenzione a:</p>
+<p>Richiede cautela su:</p>
 <ul>
 <li>origine germinale/somatica</li>
-<li>contaminazione normale</li>
-<li>copy number</li>
 <li>VAF</li>
+<li>copy number</li>
+<li>contaminazione normale</li>
 <li>incertezza residua</li>
 </ul>
 <h3 id="matched-tumor-normal">Matched tumor-normal</h3>
-<p>Aiuta a separare varianti somatiche e germinali.</p>
+<p>Aiuta a distinguere varianti somatiche e germinali.</p>
 </section>
-<section id="tiering-ampascocap" class="slide level2">
-<h2>Tiering AMP/ASCO/CAP</h2>
-<p>Il materiale usa il tiering per:</p>
+<section id="ampascocap" class="slide level2">
+<h2>AMP/ASCO/CAP</h2>
+<p>Il tiering organizza il significato clinico-molecolare di:</p>
 <ul>
-<li>varianti</li>
+<li>SNV / indel</li>
 <li>amplificazioni</li>
 <li>fusioni</li>
+<li>alterazioni strutturali</li>
 </ul>
-<p>Classificazione:</p>
 </section></section>
 <section>
 <section id="tier-iiv" class="title-slide slide level1 center">
 <h1>Tier I–IV</h1>
-
+<div class="small">
+<p>Il tiering non è automaticamente una decisione terapeutica.</p>
+</div>
 </section>
-<h3 id="punto-chiave">Punto chiave</h3>
-<p>Il tiering descrive il significato della variante nel contesto clinico-molecolare.</p>
 <section id="escat" class="slide level2">
 <h2>ESCAT</h2>
-<p>L’actionability clinica viene letta con livelli ESCAT.</p>
-<h3 id="domanda-centrale">Domanda centrale</h3>
-<p>Quanto è forte l’evidenza che collega:</p>
+<p>ESCAT risponde a una domanda diversa:</p>
 </section></section>
 <section>
-<section id="alterazione-tumore-setting-trattamento" class="title-slide slide level1 center">
-<h1>alterazione → tumore → setting → trattamento?</h1>
-
+<section id="quanto-è-forte-levidenza-clinica" class="title-slide slide level1 center">
+<h1>Quanto è forte l’evidenza clinica?</h1>
+<p>Collega:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a aria-label="1"></a>alterazione</span>
+<span id="cb3-2"><a aria-label="2"></a>   ↓</span>
+<span id="cb3-3"><a aria-label="3"></a>tipo tumorale</span>
+<span id="cb3-4"><a aria-label="4"></a>   ↓</span>
+<span id="cb3-5"><a aria-label="5"></a>setting clinico</span>
+<span id="cb3-6"><a aria-label="6"></a>   ↓</span>
+<span id="cb3-7"><a aria-label="7"></a>trattamento</span>
+<span id="cb3-8"><a aria-label="8"></a>   ↓</span>
+<span id="cb3-9"><a aria-label="9"></a>livello di evidenza</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="tiering-actionability" class="slide level2">
-<h2>Tiering ≠ actionability</h2>
+<section id="pitfall" class="slide level2">
+<h2>Pitfall</h2>
+</section></section>
+<section>
+<section id="pathogenicity-actionability" class="title-slide slide level1 center">
+<h1>Pathogenicity ≠ actionability</h1>
 <p>Una variante può essere:</p>
 <ul>
-<li>biologicamente rilevante</li>
-<li>tecnicamente vera</li>
-<li>classificabile</li>
-<li>ma non immediatamente actionable in quel setting</li>
+<li>vera analiticamente</li>
+<li>patogenetica biologicamente</li>
+<li>ma non actionable in quello specifico setting</li>
 </ul>
-</section></section>
-<section>
-<section id="non-saltare-i-passaggi" class="title-slide slide level1 center">
-<h1>Non saltare i passaggi</h1>
-
+<div class="warn">
+<p>Errore da evitare: variante → farmaco.</p>
+</div>
 </section>
-<section id="trade-off-clinico" class="slide level2">
-<h2>Trade-off clinico</h2>
-<p>Il framework include:</p>
+<section id="trade-off-e-documentazione" class="slide level2">
+<h2>Trade-off e documentazione</h2>
+<p>Una raccomandazione MTB deve includere:</p>
 <ul>
 <li>beneficio atteso</li>
 <li>tossicità</li>
 <li>logistica</li>
 <li>preferenze del paziente</li>
-</ul>
-<h3 id="messaggio">Messaggio</h3>
-<p>La decisione MTB non è una semplice conversione automatica da variante a terapia.</p>
-</section>
-<section id="documentazione" class="slide level2">
-<h2>Documentazione</h2>
-<p>Nel processo MTB vanno documentati:</p>
-<ul>
-<li>raccomandazione primaria</li>
 <li>alternative</li>
 <li>trial clinici</li>
 <li>follow-up</li>
 </ul>
-<h3 id="obiettivo">Obiettivo</h3>
-<p>Rendere tracciabile il ragionamento.</p>
 </section>
-<section id="aleatoric-vs-epistemic-uncertainty" class="slide level2">
-<h2>Aleatoric vs epistemic uncertainty</h2>
+<section id="incertezza" class="slide level2">
+<h2>Incertezza</h2>
 <h3 id="aleatoric">Aleatoric</h3>
-<p>Incertezza intrinseca al dato o al fenomeno osservato.</p>
+<p>Incertezza intrinseca al dato.</p>
 <h3 id="epistemic">Epistemic</h3>
 <p>Incertezza dovuta a:</p>
 <ul>
 <li>limiti del modello</li>
 <li>limiti del dato</li>
 <li>incompletezza conoscitiva</li>
-<li>esempio: tumor-only</li>
+<li>tumor-only</li>
 </ul>
+<div class="takehome">
+<p>Un buon report dichiara cosa è certo, probabile o ignoto.</p>
+</div>
 </section>
 <section id="checklist-mtb" class="slide level2">
 <h2>Checklist MTB</h2>
-<p>Prima di formulare una raccomandazione:</p>
+<p>Prima di discutere actionability:</p>
 <ol type="1">
-<li>il dato è tecnicamente interpretabile?</li>
-<li>il contesto istologico è coerente?</li>
-<li>il tier AMP/ASCO/CAP è definito?</li>
-<li>il livello ESCAT è pertinente?</li>
-<li>trade-off e alternative sono dichiarati?</li>
-<li>l’incertezza è documentata?</li>
+<li>Il dato è tecnicamente interpretabile?</li>
+<li>Il contesto istologico è coerente?</li>
+<li>Il tier AMP/ASCO/CAP è corretto?</li>
+<li>ESCAT è pertinente?</li>
+<li>L’incertezza è esplicita?</li>
+<li>Il report è tracciabile?</li>
 </ol>
 </section>
 <section class="slide level2">
 
 </section></section>
 <section>
-<section id="modulo-2" class="title-slide slide level1 center">
+<section id="modulo-2" class="title-slide slide level1 inverse center">
 <h1>MODULO 2</h1>
 
 </section>
 <section id="splitfusion" class="slide level2">
 <h2>SplitFusion</h2>
 </section>
-<section id="perché-parlare-di-fusioni" class="slide level2">
-<h2>Perché parlare di fusioni</h2>
-<p>Le fusioni geniche sono rilevanti in oncologia.</p>
-<p>Esempi citati nel materiale:</p>
+<section id="perché-le-fusioni-contano" class="slide level2">
+<h2>Perché le fusioni contano</h2>
+<p>Le fusioni geniche sono importanti in oncologia di precisione.</p>
+<p>Esempi classici:</p>
 <ul>
-<li><strong>BCR-ABL</strong> nella leucemia mieloide cronica</li>
-<li><strong>EML4-ALK</strong> nel carcinoma polmonare</li>
+<li><strong>BCR-ABL</strong></li>
+<li><strong>EML4-ALK</strong></li>
 </ul>
-<h3 id="obiettivo-clinico">Obiettivo clinico</h3>
-<p>Abbinare il paziente al trattamento corretto quando l’evidenza è solida.</p>
+<div class="takehome">
+<p>Una fusione può essere un driver, un biomarker o un artefatto: va dimostrato.</p>
+</div>
 </section>
-<section id="difficoltà-diagnostiche-delle-fusioni" class="slide level2">
-<h2>Difficoltà diagnostiche delle fusioni</h2>
-<p>Il materiale evidenzia:</p>
+<section id="perché-sono-difficili" class="slide level2">
+<h2>Perché sono difficili</h2>
+<p>Criticità tipiche:</p>
 <ul>
-<li>partner di fusione numerosi</li>
 <li>partner sconosciuti</li>
-<li>bassa espressione, per esempio ALK</li>
-<li>espressione proteica non specifica, per esempio ROS1</li>
+<li>bassa espressione</li>
 <li>splice site criptici</li>
-<li>bassa diversità di sequenza ai breakpoint</li>
-<li>difficoltà di mapping</li>
-<li>campioni poveri, limitati o a bassa cellularità tumorale</li>
+<li>mapping difficile al breakpoint</li>
+<li>bassa diversità di sequenza</li>
+<li>campioni poveri o a bassa cellularità</li>
+<li>espressione proteica non specifica</li>
 </ul>
 </section>
-<section id="ruolo-dellamp" class="slide level2">
-<h2>Ruolo dell’AMP</h2>
-<p>L’Anchored Multiplex PCR viene presentata come tecnologia utile per affrontare molte criticità della diagnostica delle fusioni.</p>
-<h3 id="nel-contesto-splitfusion">Nel contesto SplitFusion</h3>
-<p>SplitFusion può essere usato per:</p>
-<ul>
-<li>RNA-seq</li>
-<li>Anchored Multiplex PCR data</li>
-</ul>
+<section id="rna-seq-e-amp" class="slide level2">
+<h2>RNA-seq e AMP</h2>
+<p>SplitFusion può essere applicato a:</p>
+<h3 id="rna-seq">RNA-seq</h3>
+<p>per rilevare trascritti di fusione.</p>
+<h3 id="anchored-multiplex-pcr">Anchored Multiplex PCR</h3>
+<p>per arricchire regioni target e catturare partner noti o inattesi.</p>
 </section>
-<section id="splitfusion-principio-computazionale" class="slide level2">
-<h2>SplitFusion — principio computazionale</h2>
+<section id="principio-computazionale" class="slide level2">
+<h2>Principio computazionale</h2>
 <p>SplitFusion sfrutta:</p>
 </section></section>
 <section>
 <section id="chimeric-split-read-alignments-di-bwa-mem" class="title-slide slide level1 center">
 <h1>chimeric split-read alignments di BWA-MEM</h1>
-<p>Caratteristiche riportate:</p>
-<ul>
-<li>agnostico rispetto ai soli trascritti codificanti noti</li>
-<li>computazionalmente efficiente</li>
-<li>orientato al reporting clinico</li>
-</ul>
-</section>
-<section id="perché-gli-split-reads-sono-importanti" class="slide level2">
-<h2>Perché gli split reads sono importanti</h2>
-<p>Uno split read può attraversare un breakpoint.</p>
-<p>In una fusione, l’evidenza analitica deve interrogare:</p>
-<ul>
-<li>posizione del breakpoint</li>
-<li>qualità dell’allineamento</li>
-<li>coerenza delle letture</li>
-<li>possibili mapping artefactuali</li>
-<li>supporto indipendente</li>
-</ul>
+<p>Un candidato di fusione nasce quando le letture supportano un evento chimerico coerente.</p>
 </section>
 <section id="workflow-splitfusion" class="slide level2">
 <h2>Workflow SplitFusion</h2>
-<p>Il workflow descritto comprende:</p>
-<ol type="1">
-<li>reference alignment</li>
-<li>deduplication</li>
-<li>CIGAR transformation</li>
-<li>candidate breakpoint calling</li>
-<li>initial breakpoint filtering</li>
-<li>breakpoint gene annotation</li>
-<li>frame-ness</li>
-<li>exon-boundary analysis</li>
-<li>further filtering</li>
-<li>target reporting</li>
-<li>visualization</li>
-</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a aria-label="1"></a>reference alignment</span>
+<span id="cb4-2"><a aria-label="2"></a>      ↓</span>
+<span id="cb4-3"><a aria-label="3"></a>deduplication</span>
+<span id="cb4-4"><a aria-label="4"></a>      ↓</span>
+<span id="cb4-5"><a aria-label="5"></a>CIGAR transformation</span>
+<span id="cb4-6"><a aria-label="6"></a>      ↓</span>
+<span id="cb4-7"><a aria-label="7"></a>candidate breakpoint calling</span>
+<span id="cb4-8"><a aria-label="8"></a>      ↓</span>
+<span id="cb4-9"><a aria-label="9"></a>initial filtering</span>
+<span id="cb4-10"><a aria-label="10"></a>      ↓</span>
+<span id="cb4-11"><a aria-label="11"></a>gene annotation</span>
+<span id="cb4-12"><a aria-label="12"></a>      ↓</span>
+<span id="cb4-13"><a aria-label="13"></a>frame-ness + exon-boundary</span>
+<span id="cb4-14"><a aria-label="14"></a>      ↓</span>
+<span id="cb4-15"><a aria-label="15"></a>reporting / visualization</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="reference-alignment-e-deduplication" class="slide level2">
-<h2>Reference alignment e deduplication</h2>
-<h3 id="obiettivo-1">Obiettivo</h3>
-<p>Produrre allineamenti utilizzabili per cercare evidenza chimerica.</p>
-<h3 id="audit">Audit</h3>
+<section id="audit-dello-split-read" class="slide level2">
+<h2>Audit dello split-read</h2>
+<p>Controllare:</p>
 <ul>
-<li>la reference è corretta?</li>
-<li>i reads sono deduplicati?</li>
-<li>l’allineamento supporta il breakpoint?</li>
-<li>la qualità di mapping è sufficiente?</li>
+<li>posizione del breakpoint</li>
+<li>qualità di mapping</li>
+<li>coerenza della porzione split</li>
+<li>supporto da frammenti indipendenti</li>
+<li>ambiguità di mapping</li>
+<li>duplicati</li>
+<li>contesto esonico</li>
 </ul>
 </section>
 <section id="cigar-transformation" class="slide level2">
 <h2>CIGAR transformation</h2>
-<p>La trasformazione del CIGAR serve a rendere interpretabili gli eventi di allineamento utili al breakpoint calling.</p>
-<h3 id="da-verificare">Da verificare</h3>
+<p>La trasformazione del CIGAR aiuta a rendere interpretabili:</p>
 <ul>
 <li>soft clipping</li>
 <li>split alignment</li>
 <li>porzioni mappate su regioni diverse</li>
-<li>coerenza dell’evento chimerico</li>
+<li>segnali chimerici</li>
 </ul>
+<div class="small">
+<p>Questa è una fase computazionale, non una conclusione clinica.</p>
+</div>
 </section>
-<section id="candidate-breakpoint-calling" class="slide level2">
-<h2>Candidate breakpoint calling</h2>
+<section id="breakpoint-calling" class="slide level2">
+<h2>Breakpoint calling</h2>
 <p>Il software produce candidati.</p>
-<h3 id="il-candidato-non-è-ancora-un-risultato-clinico">Il candidato non è ancora un risultato clinico</h3>
-<p>Serve filtrare e contestualizzare.</p>
-</section>
-<section id="initial-breakpoint-filtering" class="slide level2">
-<h2>Initial breakpoint filtering</h2>
-<p>Il filtering iniziale serve a ridurre:</p>
+<p>Poi servono:</p>
 <ul>
-<li>falsi positivi</li>
-<li>mapping ambigui</li>
-<li>eventi tecnici</li>
-<li>breakpoint con supporto insufficiente</li>
-</ul>
-</section>
-<section id="gene-annotation" class="slide level2">
-<h2>Gene annotation</h2>
-<p>Dopo il breakpoint calling, il metodo annota i geni coinvolti.</p>
-<h3 id="attenzione">Attenzione</h3>
-<p>Il nome GeneA–GeneB non basta.</p>
-<p>Serve sapere:</p>
-<ul>
-<li>breakpoint</li>
-<li>esoni coinvolti</li>
-<li>trascritto</li>
-<li>frame</li>
-<li>supporto analitico</li>
+<li>filtri iniziali</li>
+<li>annotazione genica</li>
+<li>frame-ness</li>
+<li>exon-boundary</li>
+<li>visualizzazione</li>
+<li>revisione del supporto analitico</li>
 </ul>
 </section>
 <section id="frame-ness" class="slide level2">
 <h2>Frame-ness</h2>
-<p>SplitFusion viene descritto come capace di inferire il frame-ness del trascritto di fusione.</p>
-<h3 id="domanda-mtb">Domanda MTB</h3>
-<p>La fusione è:</p>
+<p>Domande:</p>
 <ul>
-<li>in-frame?</li>
-<li>out-of-frame?</li>
-<li>coerente con un meccanismo oncogenico?</li>
-<li>supportata da evidenza sufficiente?</li>
+<li>la fusione è in-frame?</li>
+<li>conserva domini funzionali?</li>
+<li>è coerente con un meccanismo oncogenico?</li>
+<li>il trascritto è plausibile?</li>
+<li>esiste evidenza clinica associata?</li>
 </ul>
 </section>
-<section id="exon-boundary-alignments" class="slide level2">
-<h2>Exon-boundary alignments</h2>
-<p>Il materiale richiama la capacità di valutare gli allineamenti a confine esonico.</p>
-<h3 id="perché-conta">Perché conta</h3>
-<p>Per interpretare:</p>
-<ul>
-<li>plausibilità trascrizionale</li>
-<li>coerenza con il gene model</li>
-<li>possibili artefatti</li>
-<li>reportabilità</li>
-</ul>
-</section>
-<section id="unique-dnarna-fragment-ligation-sites" class="slide level2">
-<h2>Unique DNA/RNA fragment ligation sites</h2>
-<p>Il materiale indica anche il calcolo del numero di siti di ligazione/frammenti unici DNA/RNA.</p>
-<h3 id="audit-1">Audit</h3>
-<p>Supporto da molte letture duplicate ≠ supporto da frammenti indipendenti.</p>
-</section>
-<section id="splitfusion-target" class="slide level2">
-<h2>SplitFusion-Target</h2>
-<p>Il materiale descrive una modalità <strong>SplitFusion-Target</strong> per miglioramento continuo basato sull’evidenza nel reporting clinico.</p>
-<h3 id="interpretazione-didattica">Interpretazione didattica</h3>
-<p>Utile per passare da:</p>
-<ul>
-<li>ricerca ampia</li>
-<li>a reporting mirato</li>
-<li>con accumulo di evidenza strutturata</li>
-</ul>
-</section>
-<section id="dependencies-risorse-genomiche" class="slide level2">
-<h2>Dependencies — risorse genomiche</h2>
-<p>Nel materiale sono citati:</p>
+<section id="dependencies" class="slide level2">
+<h2>Dependencies</h2>
+<p>Il materiale SplitFusion richiama:</p>
 <ul>
 <li>human genome reference</li>
-<li>esempi di download hg19</li>
-<li>organizzazione locale dei database</li>
-</ul>
-<h3 id="messaggio-pratico">Messaggio pratico</h3>
-<p>La pipeline dipende fortemente da reference e annotazioni coerenti.</p>
-</section>
-<section id="dependencies-tool-principali" class="slide level2">
-<h2>Dependencies — tool principali</h2>
-<p>Il materiale include installazione/uso di:</p>
-<ul>
 <li>samtools</li>
 <li>BWA</li>
 <li>bedtools</li>
 <li>perl</li>
 <li>R</li>
 <li>Python</li>
+<li>snpEff / ANNOVAR</li>
 </ul>
+<div class="takehome">
+<p>Reference e annotazioni influenzano direttamente il risultato.</p>
+</div>
 </section>
-<section id="annotation-tools" class="slide level2">
-<h2>Annotation tools</h2>
-<p>SplitFusion usa di default:</p>
+<section id="comandi-esempio" class="slide level2">
+<h2>Comandi esempio</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a aria-label="1"></a><span class="fu">git</span> clone https://github.com/lh3/bwa.git</span>
+<span id="cb5-2"><a aria-label="2"></a><span class="bu">cd</span> bwa</span>
+<span id="cb5-3"><a aria-label="3"></a><span class="fu">make</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"Rcpp"</span>, <span class="st">"data.table"</span>, <span class="st">"plyr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a aria-label="1"></a><span class="bu">cd</span> /home/user1/tools/</span>
+<span id="cb7-2"><a aria-label="2"></a><span class="fu">git</span> clone https://github.com/Zheng-NGS-Lab/SplitFusion.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pitfall-splitfusion" class="slide level2">
+<h2>Pitfall SplitFusion</h2>
 </section></section>
-<section id="snpeff" class="title-slide slide level1 center">
-<h1>snpEff</h1>
-<p>e supporta anche:</p>
-</section>
-
 <section>
-<section id="annovar" class="title-slide slide level1 center">
-<h1>ANNOVAR</h1>
-
-</section>
-<h3 id="implicazione">Implicazione</h3>
-<p>La scelta dell’annotatore può influenzare interpretazione e report.</p>
-<section id="esempi-di-setup" class="slide level2">
-<h2>Esempi di setup</h2>
-<p>Il materiale mostra esempi pratici come:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a aria-label="1"></a><span class="fu">git</span> clone https://github.com/lh3/bwa.git</span>
-<span id="cb1-2"><a aria-label="2"></a><span class="bu">cd</span> bwa</span>
-<span id="cb1-3"><a aria-label="3"></a><span class="fu">make</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>e installazione di pacchetti R:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"Rcpp"</span>, <span class="st">"data.table"</span>, <span class="st">"plyr"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="installazione-splitfusion" class="slide level2">
-<h2>Installazione SplitFusion</h2>
-<p>Nel materiale viene indicato il clone del repository:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a aria-label="1"></a><span class="bu">cd</span> /home/user1/tools/</span>
-<span id="cb3-2"><a aria-label="2"></a><span class="fu">git</span> clone https://github.com/Zheng-NGS-Lab/SplitFusion.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<h3 id="per-una-masterclass">Per una masterclass</h3>
-<p>Non serve installare tutto dal vivo.</p>
-<p>Serve capire cosa influenza il risultato.</p>
+<section id="software-call-clinical-result" class="title-slide slide level1 center">
+<h1>Software call ≠ clinical result</h1>
+<p>Una fusione candidata deve passare attraverso:</p>
+<ol type="1">
+<li>evidenza analitica</li>
+<li>controllo QC</li>
+<li>interpretazione biologica</li>
+<li>framework clinico</li>
+<li>documentazione</li>
+</ol>
 </section>
 <section class="slide level2">
 
 </section></section>
 <section>
-<section id="modulo-3" class="title-slide slide level1 center">
+<section id="modulo-3" class="title-slide slide level1 inverse center">
 <h1>MODULO 3</h1>
 
 </section>
-<section id="integrazione-mtb" class="slide level2">
-<h2>Integrazione MTB</h2>
+<section id="mtbp-come-modello-decisionale" class="slide level2">
+<h2>MTBP come modello decisionale</h2>
 </section>
-<section id="dal-candidato-di-fusione-al-report" class="slide level2">
-<h2>Dal candidato di fusione al report</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a aria-label="1"></a>Reads</span>
-<span id="cb4-2"><a aria-label="2"></a>  ↓</span>
-<span id="cb4-3"><a aria-label="3"></a>alignment</span>
-<span id="cb4-4"><a aria-label="4"></a>  ↓</span>
-<span id="cb4-5"><a aria-label="5"></a>split-read evidence</span>
-<span id="cb4-6"><a aria-label="6"></a>  ↓</span>
-<span id="cb4-7"><a aria-label="7"></a>candidate breakpoint</span>
-<span id="cb4-8"><a aria-label="8"></a>  ↓</span>
-<span id="cb4-9"><a aria-label="9"></a>filtering</span>
-<span id="cb4-10"><a aria-label="10"></a>  ↓</span>
-<span id="cb4-11"><a aria-label="11"></a>gene / exon / frame annotation</span>
-<span id="cb4-12"><a aria-label="12"></a>  ↓</span>
-<span id="cb4-13"><a aria-label="13"></a>clinical framework</span>
-<span id="cb4-14"><a aria-label="14"></a>  ↓</span>
-<span id="cb4-15"><a aria-label="15"></a>MTB discussion</span>
-<span id="cb4-16"><a aria-label="16"></a>  ↓</span>
-<span id="cb4-17"><a aria-label="17"></a>report</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="audit-fusion-call" class="slide level2">
-<h2>Audit fusion call</h2>
-<p>Domande minime:</p>
-<ul>
-<li>quanti split reads?</li>
-<li>quanti frammenti indipendenti?</li>
-<li>il breakpoint è coerente?</li>
-<li>la fusione è in-frame?</li>
-<li>ci sono ambiguità di mapping?</li>
-<li>la fusione è compatibile con il tumore?</li>
-<li>il tier e l’actionability sono chiari?</li>
-</ul>
-</section>
-<section id="errore-comune-1" class="slide level2">
-<h2>Errore comune 1</h2>
+<section id="molecular-tumor-board-portal" class="slide level2">
+<h2>Molecular Tumor Board Portal</h2>
+<p>MTBP è un clinical decision support system per precision oncology.</p>
+<p>La logica utile per la masterclass:</p>
 </section></section>
 <section>
-<section id="detection-interpretation" class="title-slide slide level1 center">
-<h1>Detection = interpretation</h1>
-<p>No.</p>
-<p>Il software rileva un candidato, ma il MTB deve valutare evidenza, contesto e significato.</p>
+<section id="molecular-profile-clinical-action" class="title-slide slide level1 center">
+<h1>molecular profile → clinical action</h1>
+<p>con processo condiviso e report strutturato.</p>
 </section>
-<section id="errore-comune-2" class="slide level2">
-<h2>Errore comune 2</h2>
-</section></section>
-<section>
-<section id="reproducibility-clinical-validity" class="title-slide slide level1 center">
-<h1>Reproducibility = clinical validity</h1>
-<p>No.</p>
-<p>Un workflow riproducibile è necessario, ma non sufficiente per la validità clinica.</p>
-</section>
-<section id="errore-comune-3" class="slide level2">
-<h2>Errore comune 3</h2>
-</section></section>
-<section>
-<section id="tiering-decision" class="title-slide slide level1 center">
-<h1>Tiering = decision</h1>
-<p>No.</p>
-<p>Il tiering struttura l’evidenza.</p>
-<p>La decisione include trade-off, alternative, preferenze, contesto e documentazione.</p>
-</section>
-<section id="tre-indicazioni-finali" class="slide level2">
-<h2>Tre indicazioni finali</h2>
-<h3 id="evidence-first">1 — Evidence first</h3>
-<p>Il livello analitico viene prima del livello clinico.</p>
-</section>
-<section id="tre-indicazioni-finali-1" class="slide level2">
-<h2>Tre indicazioni finali</h2>
-<h3 id="keep-frameworks-separate">2 — Keep frameworks separate</h3>
-<p>AMP/ASCO/CAP ed ESCAT rispondono a domande diverse.</p>
-</section>
-<section id="tre-indicazioni-finali-2" class="slide level2">
-<h2>Tre indicazioni finali</h2>
-<h3 id="document-uncertainty">3 — Document uncertainty</h3>
-<p>Dichiarare sempre cosa è certo, cosa è probabile e cosa resta ignoto.</p>
-</section>
-<section id="materiali" class="slide level2">
-<h2>Materiali</h2>
-<p><a href="materiali.html">Apri la pagina materiali</a></p>
-<p><a href="downloads/materiali-originali-fusion-2026.zip">Scarica ZIP dei tre HTML originali</a></p>
-</section>
-<section class="slide level2">
-
-</section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="modulo-4" class="title-slide slide level1 center">
-<h1>MODULO 4</h1>
-
-</section>
-<section id="mtbp-dal-dato-alla-decisione" class="slide level2">
-<h2>MTBP: dal dato alla decisione</h2>
-<h3 id="tamborero-et-al.-nature-cancer-2022">Tamborero et al., Nature Cancer 2022</h3>
-<p>Il Molecular Tumor Board Portal (MTBP) è un clinical decision support system sviluppato nel contesto Cancer Core Europe.</p>
-<p>Il principio didattico che ci interessa è:</p>
-</section></section>
-<section>
-<section id="dato-molecolare-funzione-contesto-actionability-decisione" class="title-slide slide level1 center">
-<h1>dato molecolare → funzione → contesto → actionability → decisione</h1>
-
-</section>
-<section id="perché-un-cdss-nel-molecular-tumor-board" class="slide level2">
-<h2>Perché un CDSS nel Molecular Tumor Board?</h2>
-<p>L’interpretazione manuale deve integrare:</p>
-<ul>
-<li>risorse genomiche diverse</li>
-<li>criteri di annotazione</li>
-<li>priorità di actionability</li>
-<li>trial disponibili</li>
-<li>informazioni cliniche e patologiche</li>
-</ul>
-<h3 id="obiettivo-2">Obiettivo</h3>
-<p>Ridurre procedure manuali, aumentare consistenza e strutturare la discussione MTB.</p>
-</section>
-<section id="tre-livelli-da-non-confondere" class="slide level2">
-<h2>Tre livelli da non confondere</h2>
-<h3 id="functional">1. Functional</h3>
-<p>La variante altera la funzione dell’allele?</p>
-<h3 id="biological">2. Biological</h3>
-<p>Il tumore mostra il fenotipo biologico coerente?</p>
-<h3 id="clinical">3. Clinical</h3>
-<p>Quel contesto aumenta la probabilità di beneficio clinico?</p>
+<section id="tre-livelli-da-separare" class="slide level2">
+<h2>Tre livelli da separare</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Livello</th>
+<th>Domanda</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Functional</td>
+<td>L’allele è alterato funzionalmente?</td>
+</tr>
+<tr class="even">
+<td>Biological</td>
+<td>Il tumore mostra un fenotipo coerente?</td>
+</tr>
+<tr class="odd">
+<td>Clinical</td>
+<td>Il dato è actionable nel setting?</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="esempio-brca1" class="slide level2">
 <h2>Esempio BRCA1</h2>
-<h3 id="functional-1">Functional</h3>
-<p>La variante <strong>BRCA1</strong> è loss-of-function?</p>
-<h3 id="biological-1">Biological</h3>
-<p>Le cellule tumorali sono realmente <strong>HRR-defective</strong>?</p>
-<h3 id="clinical-1">Clinical</h3>
-<p>Questo aumenta la sensibilità del tumore a <strong>PARP inhibitors</strong>?</p>
+<h3 id="functional">Functional</h3>
+<p>La variante BRCA1 è loss-of-function?</p>
+<h3 id="biological">Biological</h3>
+<p>Il tumore è HRR-defective?</p>
+<h3 id="clinical">Clinical</h3>
+<p>Aumenta la sensibilità a PARP inhibitors nel contesto specifico?</p>
+<div class="warn">
+<p>BRCA1 variant ≠ automatica terapia.</p>
+</div>
+</section>
+<section id="gerarchia-di-evidenza-funzionale" class="slide level2">
+<h2>Gerarchia di evidenza funzionale</h2>
+<h3 id="evidence-a">Evidence A</h3>
+<p>Effetto curato in knowledge base.</p>
+<h3 id="evidence-b">Evidence B</h3>
+<p>Assunzioni biologiche solide.</p>
+<h3 id="evidence-c">Evidence C</h3>
+<p>Stime computazionali.</p>
+<div class="takehome">
+<p>La predizione è il livello più debole.</p>
+</div>
+</section>
+<section id="unknown-relevance" class="slide level2">
+<h2>Unknown relevance</h2>
+<p>Un sistema maturo deve saper dire:</p>
 </section></section>
 <section>
-<section id="una-variante-non-equivale-automaticamente-a-una-decisione-terapeutica." class="title-slide slide level1 center">
-<h1>Una variante non equivale automaticamente a una decisione terapeutica.</h1>
-
-</section>
-<section id="interpretazione-allele-centric" class="slide level2">
-<h2>Interpretazione allele-centric</h2>
-<p>Nel framework MTBP la rilevanza funzionale viene inizialmente interpretata a livello dell’allele.</p>
-<p>Una variante BRCA1 nota per compromettere la funzione può quindi essere classificata come funzionalmente rilevante prima di considerare:</p>
-<ul>
-<li>origine germinale/somatica</li>
-<li>secondo allele</li>
-<li>tipo tumorale</li>
-</ul>
-<p>Questi elementi entrano successivamente nell’analisi di actionability.</p>
-</section>
-<section id="evidence-a-curated-effect" class="slide level2">
-<h2>Evidence A · Curated effect</h2>
-<p>Prima domanda:</p>
-</section></section>
-<section>
-<section id="esiste-un-effetto-già-curato" class="title-slide slide level1 center">
-<h1>esiste un effetto già curato?</h1>
-<p>Il framework integra risorse specialistiche e popolazionali.</p>
-<p>L’effetto noto costituisce il livello superiore della gerarchia di evidenza funzionale.</p>
-</section>
-<section id="evidence-b-bona-fide-biological-assumptions" class="slide level2">
-<h2>Evidence B · Bona fide biological assumptions</h2>
-<p>Se l’effetto non è già sufficientemente curato:</p>
-<ul>
-<li>consequence type</li>
-<li>nonsense / frameshift</li>
-<li>splice donor/acceptor</li>
-<li>posizione nel trascritto</li>
-<li>regioni critiche della proteina</li>
-</ul>
-<p>possono sostenere una classificazione funzionale.</p>
-</section>
-<section id="evidence-c-computational-estimation" class="slide level2">
-<h2>Evidence C · Computational estimation</h2>
-<p>Solo dopo i livelli precedenti vengono utilizzate metriche computazionali.</p>
-<p>Nel paper sono discussi:</p>
-<ul>
-<li>mutation hotspots</li>
-<li>functional impact prediction</li>
-<li>CADD per specifici scenari</li>
-</ul>
-</section></section>
-<section>
-<section id="predizione-evidenza-clinica." class="title-slide slide level1 center">
-<h1>Predizione ≠ evidenza clinica.</h1>
-
-</section>
-<section id="unknown-relevance-è-un-risultato" class="slide level2">
-<h2>Unknown relevance è un risultato</h2>
-<p>Nel cohort CCE:</p>
-<ul>
-<li><strong>26%</strong> delle mutazioni tumorali → funzionalmente rilevanti</li>
-<li><strong>9%</strong> → funzionalmente neutrali</li>
-<li><strong>65%</strong> → effetto funzionale non classificato</li>
-</ul>
-<h3 id="lezione">Lezione</h3>
-<p>Un sistema serio deve poter restituire:</p>
-</section></section>
-<section>
-<section id="non-sappiamo" class="title-slide slide level1 center">
-<h1>“non sappiamo”</h1>
-
+<section id="effetto-funzionale-sconosciuto" class="title-slide slide level1 center">
+<h1>effetto funzionale sconosciuto</h1>
+<p>Nel paper MTBP, molte varianti restano non classificabili funzionalmente.</p>
+<p>Questo è un risultato, non un fallimento.</p>
 </section>
 <section id="biomarker-matching" class="slide level2">
 <h2>Biomarker matching</h2>
-<p>MTBP distingue almeno tre modalità:</p>
-<ol type="1">
+<p>MTBP considera:</p>
+<ul>
 <li>variante specifica</li>
 <li>categoria di variante</li>
 <li>entità funzionale</li>
-</ol>
-<p>Esempi:</p>
-<ul>
-<li>BRAF p.V600E</li>
-<li>EGFR in-frame deletion exon 19</li>
-<li>FLT3 oncogenic mutation</li>
-</ul>
-</section>
-<section id="variant-match-non-basta" class="slide level2">
-<h2>Variant match non basta</h2>
-<p>L’actionability considera anche:</p>
-<ul>
-<li>concordanza tra biomarker e tipo tumorale</li>
-<li>sottotipo</li>
+<li>tipo tumorale</li>
 <li>alterazioni co-occorrenti</li>
-<li>livello dell’evidenza clinica</li>
+<li>livello di evidenza</li>
 </ul>
-<h3 id="solo-dopo">Solo dopo</h3>
-<p>si passa al ranking di actionability.</p>
 </section>
-<section id="escat-nel-workflow-mtbp" class="slide level2">
-<h2>ESCAT nel workflow MTBP</h2>
-<p>Il paper utilizza la scala ESMO-ESCAT.</p>
-<p>In modo concettuale:</p>
+<section id="escat-nel-workflow" class="slide level2">
+<h2>ESCAT nel workflow</h2>
+<p>Il ranking di actionability deve tenere insieme:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a aria-label="1"></a>biomarker</span>
+<span id="cb8-2"><a aria-label="2"></a>+ cancer type</span>
+<span id="cb8-3"><a aria-label="3"></a>+ setting</span>
+<span id="cb8-4"><a aria-label="4"></a>+ clinical evidence</span>
+<span id="cb8-5"><a aria-label="5"></a>+ available options</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="tumor-only-caveat" class="slide level2">
+<h2>Tumor-only caveat</h2>
+<p>La VAF tumorale da sola non basta per definire:</p>
 <ul>
-<li><strong>I</strong> → ready for use</li>
-<li><strong>II</strong> → investigational</li>
-<li><strong>III</strong> → cancer / mutation repurposing</li>
-<li><strong>IV</strong> → preclinical / in silico</li>
+<li>origine germinale</li>
+<li>origine somatica</li>
+<li>clonality</li>
+<li>actionability</li>
 </ul>
-<h3 id="masterclass">Masterclass</h3>
-<p>Non memorizzare soltanto il tier: ricostruire perché il caso è stato assegnato a quel livello.</p>
-</section>
-<section id="cohort-reale" class="slide level2">
-<h2>Cohort reale</h2>
-<p>Il report descrive:</p>
-</section></section>
-<section>
-<section id="tumori-solidi-avanzati" class="title-slide slide level1 center">
-<h1>500 tumori solidi avanzati</h1>
-<p>profilati nel contesto Cancer Core Europe.</p>
-<p>Tra questi erano presenti anche tumori epiteliali ovarici.</p>
-</section>
-<h3 id="per-il-nostro-corso">Per il nostro corso</h3>
-<p>Questo collega il framework MTB alla genomica ovarica senza trasformare il paper in una guideline specifica per HGSOC.</p>
-<section id="tumor-only-un-caveat-importante" class="slide level2">
-<h2>Tumor-only: un caveat importante</h2>
-<p>Il paper mostra un limite concreto del ragionamento basato solo sulla VAF tumorale.</p>
-<p>Alcune varianti germinali mostravano VAF tumorale bassa e avrebbero potuto non essere riconosciute come potenzialmente germinali usando solo tumor-only.</p>
-</section></section>
-<section>
-<section id="vaf-origine-germinalesomatica" class="title-slide slide level1 center">
-<h1>VAF ≠ origine germinale/somatica</h1>
-
+<div class="takehome">
+<p>VAF ≠ origine.</p>
+</div>
 </section>
 <section id="genetic-counseling-alerts" class="slide level2">
 <h2>Genetic counseling alerts</h2>
-<p>MTBP integra anche alert per varianti germinali che richiedono valutazione specialistica.</p>
-<h3 id="implicazione-1">Implicazione</h3>
-<p>Il workflow MTB non termina con la terapia.</p>
-<p>Può generare anche:</p>
+<p>Un sistema MTB può generare anche:</p>
 <ul>
 <li>referral genetico</li>
-<li>approfondimenti</li>
+<li>approfondimenti germinali</li>
 <li>implicazioni familiari</li>
+<li>necessità di consulenza specialistica</li>
 </ul>
+<p>Non solo indicazioni terapeutiche.</p>
 </section>
 <section id="report-interattivo" class="slide level2">
 <h2>Report interattivo</h2>
-<p>Il modello MTBP utilizza report HTML con:</p>
+<p>Il report MTBP include concettualmente:</p>
 <ul>
-<li>dashboard clinico-patologica</li>
+<li>dashboard paziente</li>
 <li>firme genomiche</li>
 <li>alterazioni classificate</li>
 <li>evidenza funzionale</li>
 <li>actionability</li>
 <li>dettagli interrogabili</li>
 </ul>
-<h3 id="collegamento-con-fusion-2026">Collegamento con Fusion 2026</h3>
-<p>Questa è anche la logica del nostro repository Quarto:</p>
-</section></section>
-<section>
-<section id="materiale-navigabile-verificabile-e-scaricabile" class="title-slide slide level1 center">
-<h1>materiale navigabile, verificabile e scaricabile</h1>
-
-</section>
-<section id="automation-autonomous-decision" class="slide level2">
-<h2>Automation ≠ autonomous decision</h2>
-<p>MTBP automatizza:</p>
-<ul>
-<li>integrity checks</li>
-<li>armonizzazione</li>
-<li>annotazione</li>
-<li>variant interpretation</li>
-<li>preparazione del report</li>
-</ul>
-<p>Ma la raccomandazione resta discussa nel Molecular Tumor Board.</p>
-</section></section>
-<section>
-<section id="supporto-decisionale-non-sostituzione-dellesperto." class="title-slide slide level1 center">
-<h1>Supporto decisionale, non sostituzione dell’esperto.</h1>
-
-</section>
-<section id="efficienza-operativa" class="slide level2">
-<h2>Efficienza operativa</h2>
-<p>Nel sistema descritto:</p>
-<ul>
-<li>turnaround complessivo riportato: <strong>&lt;14 giorni</strong> dalla biopsia al report</li>
-<li>dopo una learning curve di circa <strong>25 pazienti</strong></li>
-<li>discussione media: <strong>&lt;3 minuti per caso</strong></li>
-</ul>
-<h3 id="lezione-1">Lezione</h3>
-<p>Standardizzazione e interfacce strutturate possono rendere scalabile l’MTB.</p>
+<div class="small">
+<p>È la stessa logica che usiamo in Quarto: navigabile, verificabile, scaricabile.</p>
+</div>
 </section>
 <section class="slide level2">
 
 </section></section>
 <section>
-<section id="esercitazione" class="title-slide slide level1 center">
+<section id="esercitazione" class="title-slide slide level1 inverse center">
 <h1>ESERCITAZIONE</h1>
 
 </section>
-<section id="minuti-audit-di-un-caso-ovarico" class="slide level2">
-<h2>5 minuti · Audit di un caso ovarico</h2>
-<p>Caso didattico:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a aria-label="1"></a>HGSOC</span>
-<span id="cb5-2"><a aria-label="2"></a>BRCA1 loss-of-function candidate</span>
-<span id="cb5-3"><a aria-label="3"></a>Tumor-only NGS</span>
-<span id="cb5-4"><a aria-label="4"></a>VAF 0.18</span>
-<span id="cb5-5"><a aria-label="5"></a>HRD status: non disponibile</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<h3 id="domanda-1">Domanda 1</h3>
-<p>Cosa puoi affermare direttamente sulla funzione dell’allele?</p>
-<h3 id="domanda-2">Domanda 2</h3>
-<p>Cosa NON puoi dedurre dalla sola VAF?</p>
-<h3 id="domanda-3">Domanda 3</h3>
-<p>Quale informazione manca prima di passare da functional a biological/clinical interpretation?</p>
+<section id="minuti" class="slide level2">
+<h2>7 minuti</h2>
+</section>
+<section id="caso-didattico" class="slide level2">
+<h2>Caso didattico</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a aria-label="1"></a>Tumore: HGSOC</span>
+<span id="cb9-2"><a aria-label="2"></a>Dato: tumor-only NGS</span>
+<span id="cb9-3"><a aria-label="3"></a>Variante: BRCA1 candidate LoF</span>
+<span id="cb9-4"><a aria-label="4"></a>VAF: 0.18</span>
+<span id="cb9-5"><a aria-label="5"></a>HRD: non disponibile</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<h3 id="compito">Compito</h3>
+<p>Separare:</p>
+<ol type="1">
+<li>dato osservato</li>
+<li>inferenza funzionale</li>
+<li>inferenza biologica</li>
+<li>actionability</li>
+<li>informazione mancante</li>
+</ol>
 </section>
 <section id="soluzione-guidata" class="slide level2">
 <h2>Soluzione guidata</h2>
-<h3 id="possibile-conclusione">Possibile conclusione</h3>
-<p><strong>Functional:</strong> la classificazione LoF deve essere sostenuta dall’evidenza sulla variante.</p>
-<p><strong>Origin:</strong> VAF 0.18 non dimostra origine somatica.</p>
-<p><strong>Biological:</strong> una variante BRCA1 non dimostra da sola HRD del tumore.</p>
-<p><strong>Clinical:</strong> l’actionability richiede contesto tumorale, biomarker match e livello di evidenza.</p>
+<h3 id="osservato">Osservato</h3>
+<p>Tumor-only, BRCA1 candidate LoF, VAF 0.18.</p>
+<h3 id="non-dimostrato">Non dimostrato</h3>
+<ul>
+<li>origine germinale/somatica</li>
+<li>HRD</li>
+<li>sensibilità a PARPi</li>
+<li>indicazione terapeutica</li>
+</ul>
+<h3 id="da-richiedere">Da richiedere</h3>
+<ul>
+<li>validazione variante</li>
+<li>matched normal o percorso germinale</li>
+<li>HRD / LOH / CN</li>
+<li>contesto clinico e linee guida</li>
+</ul>
 </section>
-<section id="audit-con-ai" class="slide level2">
-<h2>Audit con AI</h2>
-<p>Prompt didattico:</p>
-<blockquote>
-<p>Classifica separatamente ciò che è dimostrato, ciò che è inferito e ciò che manca. Non proporre una terapia finché non hai distinto functional, biological e clinical interpretation.</p>
-</blockquote>
-<h3 id="compito">Compito</h3>
-<p>Confrontare la risposta dell’AI con la checklist MTBP.</p>
+<section id="prompt-ai-consigliato" class="slide level2">
+<h2>Prompt AI consigliato</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a aria-label="1"></a>Classifica separatamente:</span>
+<span id="cb10-2"><a aria-label="2"></a>1. evidenza analitica osservata</span>
+<span id="cb10-3"><a aria-label="3"></a>2. interpretazione funzionale</span>
+<span id="cb10-4"><a aria-label="4"></a>3. interpretazione biologica</span>
+<span id="cb10-5"><a aria-label="5"></a>4. actionability clinica</span>
+<span id="cb10-6"><a aria-label="6"></a>5. conclusioni non supportate</span>
+<span id="cb10-7"><a aria-label="7"></a>6. dati mancanti</span>
+<span id="cb10-8"><a aria-label="8"></a></span>
+<span id="cb10-9"><a aria-label="9"></a>Non proporre terapia senza livello di evidenza e contesto clinico.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="checklist-ai-mtb" class="slide level2">
 <h2>Checklist AI × MTB</h2>
 <p>L’AI ha:</p>
 <ul>
-<li>separato variante e biomarker?</li>
-<li>distinto funzione e actionability?</li>
-<li>evitato di inferire germline/somatic da VAF?</li>
-<li>esplicitato le informazioni mancanti?</li>
-<li>dichiarato l’incertezza?</li>
-<li>mantenuto la decisione finale nel dominio MTB?</li>
+<li>separato functional, biological e clinical?</li>
+<li>evitato di dedurre germinale/somatico da VAF?</li>
+<li>dichiarato HRD come mancante?</li>
+<li>distinto tiering da decisione?</li>
+<li>segnalato incertezza?</li>
+<li>mantenuto la decisione nel MTB?</li>
 </ul>
 </section>
-<section id="take-home-framework" class="slide level2">
-<h2>Take-home framework</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a aria-label="1"></a>NGS result</span>
-<span id="cb6-2"><a aria-label="2"></a>    ↓</span>
-<span id="cb6-3"><a aria-label="3"></a>Analytical validity</span>
-<span id="cb6-4"><a aria-label="4"></a>    ↓</span>
-<span id="cb6-5"><a aria-label="5"></a>Functional relevance</span>
-<span id="cb6-6"><a aria-label="6"></a>    ↓</span>
-<span id="cb6-7"><a aria-label="7"></a>Tumor context</span>
-<span id="cb6-8"><a aria-label="8"></a>    ↓</span>
-<span id="cb6-9"><a aria-label="9"></a>Biomarker matching</span>
-<span id="cb6-10"><a aria-label="10"></a>    ↓</span>
-<span id="cb6-11"><a aria-label="11"></a>Evidence / ESCAT</span>
-<span id="cb6-12"><a aria-label="12"></a>    ↓</span>
-<span id="cb6-13"><a aria-label="13"></a>MTB recommendation</span>
-<span id="cb6-14"><a aria-label="14"></a>    ↓</span>
-<span id="cb6-15"><a aria-label="15"></a>Structured report</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="tre-indicazioni-finali" class="slide level2">
+<h2>Tre indicazioni finali</h2>
+<h3 id="evidence-first">1 — Evidence first</h3>
+</section></section>
+<section>
+<section id="detection-interpretation" class="title-slide slide level1 center">
+<h1>Detection ≠ interpretation</h1>
+<p>La chiamata bioinformatica non è ancora una conclusione clinica.</p>
 </section>
-<section id="lettura-scientifica" class="slide level2">
-<h2>Lettura scientifica</h2>
-<p>Tamborero D. et al.</p>
-<p><strong>The Molecular Tumor Board Portal supports clinical decisions and automated reporting for precision oncology.</strong></p>
-<p><em>Nature Cancer</em> 2022;3:251–261.</p>
-<p>DOI: 10.1038/s43018-022-00332-x</p>
-<p><a href="downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf">Scarica il PDF fornito per il corso</a></p>
+<section id="tre-indicazioni-finali-1" class="slide level2">
+<h2>Tre indicazioni finali</h2>
+<h3 id="frameworks-matter">2 — Frameworks matter</h3>
+</section></section>
+<section>
+<section id="tiering-actionability" class="title-slide slide level1 center">
+<h1>Tiering ≠ actionability</h1>
+<p>AMP/ASCO/CAP ed ESCAT rispondono a domande diverse.</p>
 </section>
-<section id="fine" class="slide level2">
+<section id="tre-indicazioni-finali-2" class="slide level2">
+<h2>Tre indicazioni finali</h2>
+<h3 id="human-verification">3 — Human verification</h3>
+</section></section>
+<section>
+<section id="ai-support-clinical-decision" class="title-slide slide level1 center">
+<h1>AI support ≠ clinical decision</h1>
+<p>L’AI può aiutare a strutturare il ragionamento, ma non sostituisce revisione, verifica e firma professionale.</p>
+</section>
+<section id="materiali-scaricabili" class="slide level2">
+<h2>Materiali scaricabili</h2>
+<p><a href="materiali.html">Apri pagina materiali</a></p>
+<p><a href="downloads/materiali-originali-fusion-2026.zip">Scarica ZIP materiali originali</a></p>
+<p><a href="downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf">Scarica PDF MTBP</a></p>
+</section>
+<section id="controllo-contenuti" class="slide level2">
+<h2>Controllo contenuti</h2>
+<p><a href="controllo.html">Apri pagina controllo</a></p>
+<p>Questa pagina elenca cosa è stato incluso da:</p>
+<ul>
+<li>index originale</li>
+<li>framework</li>
+<li>SplitFusion</li>
+<li>paper MTBP</li>
+</ul>
+</section>
+<section id="fine" class="slide level2 inverse center">
 <h2>Fine</h2>
 </section></section>
 <section>
-<section id="molecular-tumor-board-1" class="title-slide slide level1 center">
-<h1>Molecular Tumor Board</h1>
+<section id="fusion-2026-1" class="title-slide slide level1 center">
+<h1>Fusion 2026</h1>
 
 </section>
-<h3 id="decision-framework-splitfusion">Decision Framework &amp; SplitFusion</h3>
+<h3 id="framework-decisionale-splitfusion-mtbp-verifica-umana">Framework decisionale · SplitFusion · MTBP · verifica umana</h3>
+<div class="takehome">
+<p>Evidence first. Context second. AI third. Human verification always.</p>
+</div>
 
 </section>
     </div>
