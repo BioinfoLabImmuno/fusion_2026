@@ -19,3 +19,8 @@ title: "Materiali scaricabili"
 ::: {.callout-note}
 Questa pagina contiene solo i tre materiali forniti per il repository Fusion 2026.
 :::
+
+
+## Articolo MTBP
+
+[⬇ Tamborero et al., Nature Cancer 2022](downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf)

@@ -43,3 +43,19 @@ title: "Controllo contenuti"
 - dependencies
 - snpEff / ANNOVAR
 - comandi di setup
+
+
+## Dal paper MTBP (Tamborero et al. 2022)
+
+- CDSS e workflow Cancer Core Europe
+- functional vs biological vs clinical interpretation
+- allele-centric interpretation
+- gerarchia di evidenza A/B/C
+- unknown functional relevance
+- biomarker matching
+- ESCAT
+- tumor-only e limiti della VAF
+- genetic counseling alerts
+- report HTML interattivo
+- automazione e ruolo del Molecular Tumor Board
+- esercitazione ovarica AI × MTB

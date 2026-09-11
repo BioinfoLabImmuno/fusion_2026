@@ -329,6 +329,174 @@
     "text": "Materiali\nApri la pagina materiali\nScarica ZIP dei tre HTML originali"
   },
   {
+    "objectID": "index.html#mtbp-dal-dato-alla-decisione",
+    "href": "index.html#mtbp-dal-dato-alla-decisione",
+    "title": "Fusion 2026",
+    "section": "MTBP: dal dato alla decisione",
+    "text": "MTBP: dal dato alla decisione\nTamborero et al., Nature Cancer 2022\nIl Molecular Tumor Board Portal (MTBP) è un clinical decision support system sviluppato nel contesto Cancer Core Europe.\nIl principio didattico che ci interessa è:"
+  },
+  {
+    "objectID": "index.html#perché-un-cdss-nel-molecular-tumor-board",
+    "href": "index.html#perché-un-cdss-nel-molecular-tumor-board",
+    "title": "Fusion 2026",
+    "section": "Perché un CDSS nel Molecular Tumor Board?",
+    "text": "Perché un CDSS nel Molecular Tumor Board?\nL’interpretazione manuale deve integrare:\n\nrisorse genomiche diverse\ncriteri di annotazione\npriorità di actionability\ntrial disponibili\ninformazioni cliniche e patologiche\n\nObiettivo\nRidurre procedure manuali, aumentare consistenza e strutturare la discussione MTB."
+  },
+  {
+    "objectID": "index.html#tre-livelli-da-non-confondere",
+    "href": "index.html#tre-livelli-da-non-confondere",
+    "title": "Fusion 2026",
+    "section": "Tre livelli da non confondere",
+    "text": "Tre livelli da non confondere\n1. Functional\nLa variante altera la funzione dell’allele?\n2. Biological\nIl tumore mostra il fenotipo biologico coerente?\n3. Clinical\nQuel contesto aumenta la probabilità di beneficio clinico?"
+  },
+  {
+    "objectID": "index.html#esempio-brca1",
+    "href": "index.html#esempio-brca1",
+    "title": "Fusion 2026",
+    "section": "Esempio BRCA1",
+    "text": "Esempio BRCA1\nFunctional\nLa variante BRCA1 è loss-of-function?\nBiological\nLe cellule tumorali sono realmente HRR-defective?\nClinical\nQuesto aumenta la sensibilità del tumore a PARP inhibitors?"
+  },
+  {
+    "objectID": "index.html#interpretazione-allele-centric",
+    "href": "index.html#interpretazione-allele-centric",
+    "title": "Fusion 2026",
+    "section": "Interpretazione allele-centric",
+    "text": "Interpretazione allele-centric\nNel framework MTBP la rilevanza funzionale viene inizialmente interpretata a livello dell’allele.\nUna variante BRCA1 nota per compromettere la funzione può quindi essere classificata come funzionalmente rilevante prima di considerare:\n\norigine germinale/somatica\nsecondo allele\ntipo tumorale\n\nQuesti elementi entrano successivamente nell’analisi di actionability."
+  },
+  {
+    "objectID": "index.html#evidence-a-curated-effect",
+    "href": "index.html#evidence-a-curated-effect",
+    "title": "Fusion 2026",
+    "section": "Evidence A · Curated effect",
+    "text": "Evidence A · Curated effect\nPrima domanda:"
+  },
+  {
+    "objectID": "index.html#evidence-b-bona-fide-biological-assumptions",
+    "href": "index.html#evidence-b-bona-fide-biological-assumptions",
+    "title": "Fusion 2026",
+    "section": "Evidence B · Bona fide biological assumptions",
+    "text": "Evidence B · Bona fide biological assumptions\nSe l’effetto non è già sufficientemente curato:\n\nconsequence type\nnonsense / frameshift\nsplice donor/acceptor\nposizione nel trascritto\nregioni critiche della proteina\n\npossono sostenere una classificazione funzionale."
+  },
+  {
+    "objectID": "index.html#evidence-c-computational-estimation",
+    "href": "index.html#evidence-c-computational-estimation",
+    "title": "Fusion 2026",
+    "section": "Evidence C · Computational estimation",
+    "text": "Evidence C · Computational estimation\nSolo dopo i livelli precedenti vengono utilizzate metriche computazionali.\nNel paper sono discussi:\n\nmutation hotspots\nfunctional impact prediction\nCADD per specifici scenari"
+  },
+  {
+    "objectID": "index.html#unknown-relevance-è-un-risultato",
+    "href": "index.html#unknown-relevance-è-un-risultato",
+    "title": "Fusion 2026",
+    "section": "Unknown relevance è un risultato",
+    "text": "Unknown relevance è un risultato\nNel cohort CCE:\n\n26% delle mutazioni tumorali → funzionalmente rilevanti\n9% → funzionalmente neutrali\n65% → effetto funzionale non classificato\n\nLezione\nUn sistema serio deve poter restituire:"
+  },
+  {
+    "objectID": "index.html#biomarker-matching",
+    "href": "index.html#biomarker-matching",
+    "title": "Fusion 2026",
+    "section": "Biomarker matching",
+    "text": "Biomarker matching\nMTBP distingue almeno tre modalità:\n\nvariante specifica\ncategoria di variante\nentità funzionale\n\nEsempi:\n\nBRAF p.V600E\nEGFR in-frame deletion exon 19\nFLT3 oncogenic mutation"
+  },
+  {
+    "objectID": "index.html#variant-match-non-basta",
+    "href": "index.html#variant-match-non-basta",
+    "title": "Fusion 2026",
+    "section": "Variant match non basta",
+    "text": "Variant match non basta\nL’actionability considera anche:\n\nconcordanza tra biomarker e tipo tumorale\nsottotipo\nalterazioni co-occorrenti\nlivello dell’evidenza clinica\n\nSolo dopo\nsi passa al ranking di actionability."
+  },
+  {
+    "objectID": "index.html#escat-nel-workflow-mtbp",
+    "href": "index.html#escat-nel-workflow-mtbp",
+    "title": "Fusion 2026",
+    "section": "ESCAT nel workflow MTBP",
+    "text": "ESCAT nel workflow MTBP\nIl paper utilizza la scala ESMO-ESCAT.\nIn modo concettuale:\n\nI → ready for use\nII → investigational\nIII → cancer / mutation repurposing\nIV → preclinical / in silico\n\nMasterclass\nNon memorizzare soltanto il tier: ricostruire perché il caso è stato assegnato a quel livello."
+  },
+  {
+    "objectID": "index.html#cohort-reale",
+    "href": "index.html#cohort-reale",
+    "title": "Fusion 2026",
+    "section": "Cohort reale",
+    "text": "Cohort reale\nIl report descrive:"
+  },
+  {
+    "objectID": "index.html#tumor-only-un-caveat-importante",
+    "href": "index.html#tumor-only-un-caveat-importante",
+    "title": "Fusion 2026",
+    "section": "Tumor-only: un caveat importante",
+    "text": "Tumor-only: un caveat importante\nIl paper mostra un limite concreto del ragionamento basato solo sulla VAF tumorale.\nAlcune varianti germinali mostravano VAF tumorale bassa e avrebbero potuto non essere riconosciute come potenzialmente germinali usando solo tumor-only."
+  },
+  {
+    "objectID": "index.html#genetic-counseling-alerts",
+    "href": "index.html#genetic-counseling-alerts",
+    "title": "Fusion 2026",
+    "section": "Genetic counseling alerts",
+    "text": "Genetic counseling alerts\nMTBP integra anche alert per varianti germinali che richiedono valutazione specialistica.\nImplicazione\nIl workflow MTB non termina con la terapia.\nPuò generare anche:\n\nreferral genetico\napprofondimenti\nimplicazioni familiari"
+  },
+  {
+    "objectID": "index.html#report-interattivo",
+    "href": "index.html#report-interattivo",
+    "title": "Fusion 2026",
+    "section": "Report interattivo",
+    "text": "Report interattivo\nIl modello MTBP utilizza report HTML con:\n\ndashboard clinico-patologica\nfirme genomiche\nalterazioni classificate\nevidenza funzionale\nactionability\ndettagli interrogabili\n\nCollegamento con Fusion 2026\nQuesta è anche la logica del nostro repository Quarto:"
+  },
+  {
+    "objectID": "index.html#automation-autonomous-decision",
+    "href": "index.html#automation-autonomous-decision",
+    "title": "Fusion 2026",
+    "section": "Automation ≠ autonomous decision",
+    "text": "Automation ≠ autonomous decision\nMTBP automatizza:\n\nintegrity checks\narmonizzazione\nannotazione\nvariant interpretation\npreparazione del report\n\nMa la raccomandazione resta discussa nel Molecular Tumor Board."
+  },
+  {
+    "objectID": "index.html#efficienza-operativa",
+    "href": "index.html#efficienza-operativa",
+    "title": "Fusion 2026",
+    "section": "Efficienza operativa",
+    "text": "Efficienza operativa\nNel sistema descritto:\n\nturnaround complessivo riportato: &lt;14 giorni dalla biopsia al report\ndopo una learning curve di circa 25 pazienti\ndiscussione media: &lt;3 minuti per caso\n\nLezione\nStandardizzazione e interfacce strutturate possono rendere scalabile l’MTB."
+  },
+  {
+    "objectID": "index.html#minuti-audit-di-un-caso-ovarico",
+    "href": "index.html#minuti-audit-di-un-caso-ovarico",
+    "title": "Fusion 2026",
+    "section": "5 minuti · Audit di un caso ovarico",
+    "text": "5 minuti · Audit di un caso ovarico\nCaso didattico:\nHGSOC\nBRCA1 loss-of-function candidate\nTumor-only NGS\nVAF 0.18\nHRD status: non disponibile\nDomanda 1\nCosa puoi affermare direttamente sulla funzione dell’allele?\nDomanda 2\nCosa NON puoi dedurre dalla sola VAF?\nDomanda 3\nQuale informazione manca prima di passare da functional a biological/clinical interpretation?"
+  },
+  {
+    "objectID": "index.html#soluzione-guidata",
+    "href": "index.html#soluzione-guidata",
+    "title": "Fusion 2026",
+    "section": "Soluzione guidata",
+    "text": "Soluzione guidata\nPossibile conclusione\nFunctional: la classificazione LoF deve essere sostenuta dall’evidenza sulla variante.\nOrigin: VAF 0.18 non dimostra origine somatica.\nBiological: una variante BRCA1 non dimostra da sola HRD del tumore.\nClinical: l’actionability richiede contesto tumorale, biomarker match e livello di evidenza."
+  },
+  {
+    "objectID": "index.html#audit-con-ai",
+    "href": "index.html#audit-con-ai",
+    "title": "Fusion 2026",
+    "section": "Audit con AI",
+    "text": "Audit con AI\nPrompt didattico:\n\nClassifica separatamente ciò che è dimostrato, ciò che è inferito e ciò che manca. Non proporre una terapia finché non hai distinto functional, biological e clinical interpretation.\n\nCompito\nConfrontare la risposta dell’AI con la checklist MTBP."
+  },
+  {
+    "objectID": "index.html#checklist-ai-mtb",
+    "href": "index.html#checklist-ai-mtb",
+    "title": "Fusion 2026",
+    "section": "Checklist AI × MTB",
+    "text": "Checklist AI × MTB\nL’AI ha:\n\nseparato variante e biomarker?\ndistinto funzione e actionability?\nevitato di inferire germline/somatic da VAF?\nesplicitato le informazioni mancanti?\ndichiarato l’incertezza?\nmantenuto la decisione finale nel dominio MTB?"
+  },
+  {
+    "objectID": "index.html#take-home-framework",
+    "href": "index.html#take-home-framework",
+    "title": "Fusion 2026",
+    "section": "Take-home framework",
+    "text": "Take-home framework\nNGS result\n    ↓\nAnalytical validity\n    ↓\nFunctional relevance\n    ↓\nTumor context\n    ↓\nBiomarker matching\n    ↓\nEvidence / ESCAT\n    ↓\nMTB recommendation\n    ↓\nStructured report"
+  },
+  {
+    "objectID": "index.html#lettura-scientifica",
+    "href": "index.html#lettura-scientifica",
+    "title": "Fusion 2026",
+    "section": "Lettura scientifica",
+    "text": "Lettura scientifica\nTamborero D. et al.\nThe Molecular Tumor Board Portal supports clinical decisions and automated reporting for precision oncology.\nNature Cancer 2022;3:251–261.\nDOI: 10.1038/s43018-022-00332-x\nScarica il PDF fornito per il corso"
+  },
+  {
     "objectID": "index.html#fine",
     "href": "index.html#fine",
     "title": "Fusion 2026",
@@ -350,11 +518,18 @@
     "text": "⬇ Scarica ZIP con i tre HTML originali"
   },
   {
+    "objectID": "materiali.html#articolo-mtbp",
+    "href": "materiali.html#articolo-mtbp",
+    "title": "Materiali scaricabili",
+    "section": "Articolo MTBP",
+    "text": "Articolo MTBP\n⬇ Tamborero et al., Nature Cancer 2022"
+  },
+  {
     "objectID": "controllo.html",
     "href": "controllo.html",
     "title": "Controllo contenuti",
     "section": "",
-    "text": "scopo del Molecular Tumor Board Simulation Handbook\nfocus su workflow, interpretazione e comunicazione\ntarget e prerequisiti\nstruttura didattica dei capitoli\naree del corso originale\n\n\n\n\n\nqualità e contesto del dato\ncopertura, purezza, istologia, metodo\ntumor-only vs matched\ntiering AMP/ASCO/CAP\nESCAT\ntrade-off\ndocumentazione\naleatoric vs epistemic uncertainty\n\n\n\n\n\nimportanza clinica delle fusioni\nesempi BCR-ABL ed EML4-ALK\ncriticità diagnostiche\nAMP\nsplit reads e BWA-MEM\nRNA-seq e AMP data\nworkflow SplitFusion completo\ndeduplication\nCIGAR transformation\nbreakpoint calling/filtering\ngene annotation\nframe-ness\nexon-boundary\nunique DNA/RNA fragment ligation sites\nSplitFusion-Target\ndependencies\nsnpEff / ANNOVAR\ncomandi di setup"
+    "text": "scopo del Molecular Tumor Board Simulation Handbook\nfocus su workflow, interpretazione e comunicazione\ntarget e prerequisiti\nstruttura didattica dei capitoli\naree del corso originale\n\n\n\n\n\nqualità e contesto del dato\ncopertura, purezza, istologia, metodo\ntumor-only vs matched\ntiering AMP/ASCO/CAP\nESCAT\ntrade-off\ndocumentazione\naleatoric vs epistemic uncertainty\n\n\n\n\n\nimportanza clinica delle fusioni\nesempi BCR-ABL ed EML4-ALK\ncriticità diagnostiche\nAMP\nsplit reads e BWA-MEM\nRNA-seq e AMP data\nworkflow SplitFusion completo\ndeduplication\nCIGAR transformation\nbreakpoint calling/filtering\ngene annotation\nframe-ness\nexon-boundary\nunique DNA/RNA fragment ligation sites\nSplitFusion-Target\ndependencies\nsnpEff / ANNOVAR\ncomandi di setup\n\n\n\n\n\nCDSS e workflow Cancer Core Europe\nfunctional vs biological vs clinical interpretation\nallele-centric interpretation\ngerarchia di evidenza A/B/C\nunknown functional relevance\nbiomarker matching\nESCAT\ntumor-only e limiti della VAF\ngenetic counseling alerts\nreport HTML interattivo\nautomazione e ruolo del Molecular Tumor Board\nesercitazione ovarica AI × MTB"
   },
   {
     "objectID": "controllo.html#dal-file-index",
@@ -376,6 +551,13 @@
     "title": "Controllo contenuti",
     "section": "",
     "text": "importanza clinica delle fusioni\nesempi BCR-ABL ed EML4-ALK\ncriticità diagnostiche\nAMP\nsplit reads e BWA-MEM\nRNA-seq e AMP data\nworkflow SplitFusion completo\ndeduplication\nCIGAR transformation\nbreakpoint calling/filtering\ngene annotation\nframe-ness\nexon-boundary\nunique DNA/RNA fragment ligation sites\nSplitFusion-Target\ndependencies\nsnpEff / ANNOVAR\ncomandi di setup"
+  },
+  {
+    "objectID": "controllo.html#dal-paper-mtbp-tamborero-et-al.-2022",
+    "href": "controllo.html#dal-paper-mtbp-tamborero-et-al.-2022",
+    "title": "Controllo contenuti",
+    "section": "",
+    "text": "CDSS e workflow Cancer Core Europe\nfunctional vs biological vs clinical interpretation\nallele-centric interpretation\ngerarchia di evidenza A/B/C\nunknown functional relevance\nbiomarker matching\nESCAT\ntumor-only e limiti della VAF\ngenetic counseling alerts\nreport HTML interattivo\nautomazione e ruolo del Molecular Tumor Board\nesercitazione ovarica AI × MTB"
   },
   {
     "objectID": "fonti.html",

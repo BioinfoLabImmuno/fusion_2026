@@ -642,6 +642,382 @@ Dichiarare sempre cosa è certo, cosa è probabile e cosa resta ignoto.
 
 ---
 
+---
+
+# MODULO 4
+
+## MTBP: dal dato alla decisione
+
+### Tamborero et al., Nature Cancer 2022
+
+Il Molecular Tumor Board Portal (MTBP) è un clinical decision support system sviluppato nel contesto Cancer Core Europe.
+
+Il principio didattico che ci interessa è:
+
+# dato molecolare → funzione → contesto → actionability → decisione
+
+---
+
+## Perché un CDSS nel Molecular Tumor Board?
+
+L'interpretazione manuale deve integrare:
+
+- risorse genomiche diverse
+- criteri di annotazione
+- priorità di actionability
+- trial disponibili
+- informazioni cliniche e patologiche
+
+### Obiettivo
+
+Ridurre procedure manuali, aumentare consistenza e strutturare la discussione MTB.
+
+---
+
+## Tre livelli da non confondere
+
+### 1. Functional
+
+La variante altera la funzione dell'allele?
+
+### 2. Biological
+
+Il tumore mostra il fenotipo biologico coerente?
+
+### 3. Clinical
+
+Quel contesto aumenta la probabilità di beneficio clinico?
+
+---
+
+## Esempio BRCA1
+
+### Functional
+
+La variante **BRCA1** è loss-of-function?
+
+### Biological
+
+Le cellule tumorali sono realmente **HRR-defective**?
+
+### Clinical
+
+Questo aumenta la sensibilità del tumore a **PARP inhibitors**?
+
+# Una variante non equivale automaticamente a una decisione terapeutica.
+
+---
+
+## Interpretazione allele-centric
+
+Nel framework MTBP la rilevanza funzionale viene inizialmente interpretata a livello dell'allele.
+
+Una variante BRCA1 nota per compromettere la funzione può quindi essere classificata come funzionalmente rilevante prima di considerare:
+
+- origine germinale/somatica
+- secondo allele
+- tipo tumorale
+
+Questi elementi entrano successivamente nell'analisi di actionability.
+
+---
+
+## Evidence A · Curated effect
+
+Prima domanda:
+
+# esiste un effetto già curato?
+
+Il framework integra risorse specialistiche e popolazionali.
+
+L'effetto noto costituisce il livello superiore della gerarchia di evidenza funzionale.
+
+---
+
+## Evidence B · Bona fide biological assumptions
+
+Se l'effetto non è già sufficientemente curato:
+
+- consequence type
+- nonsense / frameshift
+- splice donor/acceptor
+- posizione nel trascritto
+- regioni critiche della proteina
+
+possono sostenere una classificazione funzionale.
+
+---
+
+## Evidence C · Computational estimation
+
+Solo dopo i livelli precedenti vengono utilizzate metriche computazionali.
+
+Nel paper sono discussi:
+
+- mutation hotspots
+- functional impact prediction
+- CADD per specifici scenari
+
+# Predizione ≠ evidenza clinica.
+
+---
+
+## Unknown relevance è un risultato
+
+Nel cohort CCE:
+
+- **26%** delle mutazioni tumorali → funzionalmente rilevanti
+- **9%** → funzionalmente neutrali
+- **65%** → effetto funzionale non classificato
+
+### Lezione
+
+Un sistema serio deve poter restituire:
+
+# “non sappiamo”
+
+---
+
+## Biomarker matching
+
+MTBP distingue almeno tre modalità:
+
+1. variante specifica
+2. categoria di variante
+3. entità funzionale
+
+Esempi:
+
+- BRAF p.V600E
+- EGFR in-frame deletion exon 19
+- FLT3 oncogenic mutation
+
+---
+
+## Variant match non basta
+
+L'actionability considera anche:
+
+- concordanza tra biomarker e tipo tumorale
+- sottotipo
+- alterazioni co-occorrenti
+- livello dell'evidenza clinica
+
+### Solo dopo
+
+si passa al ranking di actionability.
+
+---
+
+## ESCAT nel workflow MTBP
+
+Il paper utilizza la scala ESMO-ESCAT.
+
+In modo concettuale:
+
+- **I** → ready for use
+- **II** → investigational
+- **III** → cancer / mutation repurposing
+- **IV** → preclinical / in silico
+
+### Masterclass
+
+Non memorizzare soltanto il tier: ricostruire perché il caso è stato assegnato a quel livello.
+
+---
+
+## Cohort reale
+
+Il report descrive:
+
+# 500 tumori solidi avanzati
+
+profilati nel contesto Cancer Core Europe.
+
+Tra questi erano presenti anche tumori epiteliali ovarici.
+
+### Per il nostro corso
+
+Questo collega il framework MTB alla genomica ovarica senza trasformare il paper in una guideline specifica per HGSOC.
+
+---
+
+## Tumor-only: un caveat importante
+
+Il paper mostra un limite concreto del ragionamento basato solo sulla VAF tumorale.
+
+Alcune varianti germinali mostravano VAF tumorale bassa e avrebbero potuto non essere riconosciute come potenzialmente germinali usando solo tumor-only.
+
+# VAF ≠ origine germinale/somatica
+
+---
+
+## Genetic counseling alerts
+
+MTBP integra anche alert per varianti germinali che richiedono valutazione specialistica.
+
+### Implicazione
+
+Il workflow MTB non termina con la terapia.
+
+Può generare anche:
+
+- referral genetico
+- approfondimenti
+- implicazioni familiari
+
+---
+
+## Report interattivo
+
+Il modello MTBP utilizza report HTML con:
+
+- dashboard clinico-patologica
+- firme genomiche
+- alterazioni classificate
+- evidenza funzionale
+- actionability
+- dettagli interrogabili
+
+### Collegamento con Fusion 2026
+
+Questa è anche la logica del nostro repository Quarto:
+
+# materiale navigabile, verificabile e scaricabile
+
+---
+
+## Automation ≠ autonomous decision
+
+MTBP automatizza:
+
+- integrity checks
+- armonizzazione
+- annotazione
+- variant interpretation
+- preparazione del report
+
+Ma la raccomandazione resta discussa nel Molecular Tumor Board.
+
+# Supporto decisionale, non sostituzione dell'esperto.
+
+---
+
+## Efficienza operativa
+
+Nel sistema descritto:
+
+- turnaround complessivo riportato: **<14 giorni** dalla biopsia al report
+- dopo una learning curve di circa **25 pazienti**
+- discussione media: **<3 minuti per caso**
+
+### Lezione
+
+Standardizzazione e interfacce strutturate possono rendere scalabile l'MTB.
+
+---
+
+# ESERCITAZIONE
+
+## 5 minuti · Audit di un caso ovarico
+
+Caso didattico:
+
+```text
+HGSOC
+BRCA1 loss-of-function candidate
+Tumor-only NGS
+VAF 0.18
+HRD status: non disponibile
+```
+
+### Domanda 1
+
+Cosa puoi affermare direttamente sulla funzione dell'allele?
+
+### Domanda 2
+
+Cosa NON puoi dedurre dalla sola VAF?
+
+### Domanda 3
+
+Quale informazione manca prima di passare da functional a biological/clinical interpretation?
+
+---
+
+## Soluzione guidata
+
+### Possibile conclusione
+
+**Functional:** la classificazione LoF deve essere sostenuta dall'evidenza sulla variante.
+
+**Origin:** VAF 0.18 non dimostra origine somatica.
+
+**Biological:** una variante BRCA1 non dimostra da sola HRD del tumore.
+
+**Clinical:** l'actionability richiede contesto tumorale, biomarker match e livello di evidenza.
+
+---
+
+## Audit con AI
+
+Prompt didattico:
+
+> Classifica separatamente ciò che è dimostrato, ciò che è inferito e ciò che manca. Non proporre una terapia finché non hai distinto functional, biological e clinical interpretation.
+
+### Compito
+
+Confrontare la risposta dell'AI con la checklist MTBP.
+
+---
+
+## Checklist AI × MTB
+
+L'AI ha:
+
+- separato variante e biomarker?
+- distinto funzione e actionability?
+- evitato di inferire germline/somatic da VAF?
+- esplicitato le informazioni mancanti?
+- dichiarato l'incertezza?
+- mantenuto la decisione finale nel dominio MTB?
+
+---
+
+## Take-home framework
+
+```text
+NGS result
+    ↓
+Analytical validity
+    ↓
+Functional relevance
+    ↓
+Tumor context
+    ↓
+Biomarker matching
+    ↓
+Evidence / ESCAT
+    ↓
+MTB recommendation
+    ↓
+Structured report
+```
+
+---
+
+## Lettura scientifica
+
+Tamborero D. et al.
+
+**The Molecular Tumor Board Portal supports clinical decisions and automated reporting for precision oncology.**
+
+*Nature Cancer* 2022;3:251–261.
+
+DOI: 10.1038/s43018-022-00332-x
+
+[Scarica il PDF fornito per il corso](downloads/Tamborero_2022_MTBP_Nature_Cancer.pdf)
+
 ## Fine
 
 # Molecular Tumor Board
